@@ -1,0 +1,22 @@
+_metadata:
+  major_version: 1
+  minor_version: 1
+display_information:
+  name: The Conductor
+  description: All Aboard!
+  background_color: "#251818"
+features:
+  app_home:
+    home_tab_enabled: false
+    messages_tab_enabled: false
+    messages_tab_read_only_enabled: false
+oauth_config:
+  redirect_urls:
+    - https://all-aboard.hackclub.com/api/slack-verification-code
+  scopes:
+    user:
+      - identity.basic
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  is_hosted: false
