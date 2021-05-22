@@ -1,4 +1,14 @@
-import { Box, Container, Heading, Text, Image, Card } from 'theme-ui'
+import {
+  Box,
+  Container,
+  Heading,
+  Text,
+  Grid,
+  Card,
+  Button,
+  Flex,
+  Link
+} from 'theme-ui'
 
 export default function App() {
   return (
@@ -15,37 +25,56 @@ export default function App() {
         }}
       >
         <Container
-          sx={{ display: 'flex', alignItems: 'center', minHeight: '100vh' }}
+          sx={{
+            display: 'flex',
+            alignItems: ['flex-end', 'center'],
+            minHeight: '100vh',
+            textShadow: 'card',
+            pb: [5, 0]
+          }}
         >
           <Box sx={{ maxWidth: '800px' }}>
-            <Heading sx={{ paddingLeft: '12px', fontSize: '3em' }}>
-              <Box
-                sx={{
-                  border: '5px solid white',
-                  width: 'min-content',
-                  px: 2,
-                  borderRadius: 5,
-                  width: '64px',
-                  textAlign: 'center'
-                }}
-              >
-                h
-              </Box>
-            </Heading>
-            <Box sx={{ pt: 4 }}>
+            <Link
+              href="https://hackclub.com"
+              sx={{ textDecoration: 'none!important' }}
+            >
               <Heading
                 sx={{
-                  fontSize: '48px',
+                  paddingLeft: '12px',
+                  fontSize: '3em',
+                  color: 'white',
+                  textDecoration: 'none'
+                }}
+              >
+                <Box
+                  sx={{
+                    border: '5px solid white',
+                    width: 'min-content',
+                    px: 2,
+                    borderRadius: 5,
+                    width: '64px',
+                    textAlign: 'center',
+                    textDecoration: 'none!important'
+                  }}
+                >
+                  h
+                </Box>
+              </Heading>
+            </Link>
+            <Box sx={{ pt: [3, 4] }}>
+              <Heading
+                sx={{
+                  fontSize: ['10vw', '48px'],
                   fontWeight: '900',
                   color: 'white',
-                  paddingLeft: '12px'
+                  paddingLeft: ['4px', '12px']
                 }}
               >
                 All aboard the
               </Heading>
               <Heading
                 sx={{
-                  fontSize: '144px',
+                  fontSize: ['18vw', '144px'],
                   fontWeight: '900',
                   color: 'white',
                   lineHeight: '0.925',
@@ -56,11 +85,11 @@ export default function App() {
                   mb: '12px'
                 }}
               >
-                <Text sx={{ fontSize: '144px' }}>Hacker</Text> Zephyr
+                <Text>Hacker</Text> Zephyr
               </Heading>
               <Heading
                 sx={{
-                  fontSize: '36px',
+                  fontSize: ['6vw', '36px'],
                   fontWeight: '600',
                   color: 'white',
                   paddingLeft: '0px'
@@ -88,14 +117,15 @@ export default function App() {
               fontWeight: '500'
             }}
           >
-            Join us for an all expenses paid train trip across the country.
-            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            In 1863 the first transcontinental railroad bridged the east to west
+            coast of America. This summer, Hack Clubbers will make a pilgrimage
+            out west. Consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
           </Box>
         </Container>
       </Box>
@@ -232,6 +262,136 @@ export default function App() {
           </Card>
         </Container>
       </Box>
+      <Box
+        sx={{
+          minHeight: '40vh',
+          color: 'white',
+          borderTop: '8px solid #36271C',
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://cloud-3q64c1iul-hack-club-bot.vercel.app/0mark_twain_zephyr_ya.png)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPositionY: '15%'
+        }}
+      >
+        <Container
+          sx={{ display: 'flex', alignItems: 'center', minHeight: '60vh' }}
+        >
+          <Box sx={{ maxWidth: '700px', pr: 3 }}>
+            <Heading
+              as="h1"
+              sx={{ fontSize: ['2em', '4em'], textShadow: 'card' }}
+            >
+              Hop aboard and join us for an adventure of a lifetime!
+            </Heading>
+            <Button sx={{ mt: 3 }}>
+              Apply for a ticket (closes{' '}
+              <Text sx={{ display: ['none', 'inline'] }}>June 12th</Text>
+              <Text sx={{ display: ['inline', 'none'] }}>06/12</Text>)
+            </Button>
+          </Box>
+        </Container>
+      </Box>
+      <Box
+        sx={{
+          minHeight: '40vh',
+          color: 'white',
+          borderTop: '8px solid #36271C',
+          background: `#906B52`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPositionY: '15%'
+        }}
+      >
+        <Container sx={{ position: 'relative' }}>
+          <Box>
+            <Heading
+              as="h1"
+              sx={{ mt: 4, fontSize: ['1.5em', '2.5em'], textShadow: 'card' }}
+            >
+              Frequently Asked Questions
+            </Heading>
+            <Grid columns={[1, '1fr 1fr']} sx={{ px: '3px', pt: 3, mt: 1 }}>
+              <details>
+                <summary>So, how much does this all cost?</summary>
+                Hi
+              </details>
+              <details>
+                <summary>Will I die on the train?</summary>
+                No
+              </details>
+              <details>
+                <summary>So, how much does this all cost?</summary>
+                Hi
+              </details>
+              <details>
+                <summary>Will I die on the train?</summary>
+                No
+              </details>
+            </Grid>
+            <Grid sx={{ pt: 5, pb: 3 }} columns={'2.8fr 1fr'}>
+              <Flex sx={{ alignItems: 'center' }}>
+                <Box>
+                  <Text as="p" sx={{ fontWeight: '800', pb: 1 }}>
+                    A Project by Hack Club
+                  </Text>
+                  <Text as="p">
+                    <Link sx={{ color: 'white' }} href="https://hackclub.com">
+                      Home
+                    </Link>{' '}
+                    |{' '}
+                    <Link
+                      sx={{ color: 'white' }}
+                      href="https://hackclub.com/slack"
+                    >
+                      Slack
+                    </Link>{' '}
+                    |{' '}
+                    <Link
+                      sx={{ color: 'white' }}
+                      href="https://workshops.hackclub.com"
+                    >
+                      Workshops
+                    </Link>{' '}
+                    |{' '}
+                    <Link
+                      sx={{ color: 'white' }}
+                      href="https://scrapbook.hackclub.com"
+                    >
+                      Scrapbook
+                    </Link>
+                  </Text>
+                </Box>
+              </Flex>
+              <Box sx={{ textAlign: 'right' }}>
+                <Heading
+                  sx={{
+                    fontSize: '3em',
+                    float: 'right'
+                  }}
+                >
+                  <Box
+                    sx={{
+                      border: '5px solid white',
+                      width: 'min-content',
+                      px: 2,
+                      borderRadius: 5,
+                      width: '64px',
+                      textAlign: 'center'
+                    }}
+                  >
+                    h
+                  </Box>
+                </Heading>
+              </Box>
+            </Grid>
+          </Box>
+        </Container>
+      </Box>
+      <style>
+        {`
+        
+        `}
+      </style>
     </>
   )
 }
