@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Text } from 'theme-ui'
+import { Box, Container, Heading, Text, Image, Card } from 'theme-ui'
 
 export default function App() {
   return (
@@ -82,6 +82,7 @@ export default function App() {
               p: 3,
               borderRadius: 9,
               fontSize: '1.3em',
+              mt: 1,
               mb: 6,
               bg: '#906B52',
               fontWeight: '500'
@@ -98,17 +99,139 @@ export default function App() {
           </Box>
         </Container>
       </Box>
+
       <Box
         sx={{
           minHeight: '40vh',
           color: 'white',
-
+          borderTop: '8px solid #36271C',
           backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg/640px-Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPositionY: '80%'
         }}
-      ></Box>
+      >
+        <Container
+          sx={{ display: 'flex', alignItems: 'top', minHeight: '60vh' }}
+        >
+          <Card
+            sx={{
+              maxWidth: '700px',
+              bg: '#85865F',
+              border: '3px dashed white',
+              height: 'min-content',
+              p: [3, 3, 3],
+              mt: 4,
+              fontSize: '1.3em',
+              color: 'white'
+            }}
+          >
+            <b>Stage 1: Vermont</b>
+            <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </Card>
+        </Container>
+      </Box>
+      <Box
+        sx={{
+          minHeight: '40vh',
+          color: 'white',
+          borderTop: '8px solid #36271C',
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://upload.wikimedia.org/wikipedia/commons/2/24/Essayons_in_New_York_Harbor.jpg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPositionY: '0%'
+        }}
+      >
+        <Container
+          sx={{ display: 'flex', alignItems: 'top', minHeight: '60vh' }}
+        >
+          <Card
+            sx={{
+              maxWidth: '700px',
+              bg: '#927B97',
+              border: '3px dashed white',
+              height: 'min-content',
+              p: [3, 3, 3],
+              mt: 4,
+              fontSize: '1.3em',
+              color: 'white'
+            }}
+          >
+            <b>Stage 2: New York</b>
+            <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </Card>
+        </Container>
+      </Box>
+      <Box
+        sx={{
+          minHeight: '40vh',
+          color: 'white',
+          borderTop: '8px solid #36271C',
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/ROLLING_HILLS_IN_THE_OUTSKIRTS_OF_ATCHISON%2C_KANSAS%2C_SHOWING_AN_AREA_OF_LANDSCAPE_PAINTED_BY_GEORGE_CATLIN_BETWEEN..._-_NARA_-_557087.tif/lossy-page1-3000px-ROLLING_HILLS_IN_THE_OUTSKIRTS_OF_ATCHISON%2C_KANSAS%2C_SHOWING_AN_AREA_OF_LANDSCAPE_PAINTED_BY_GEORGE_CATLIN_BETWEEN..._-_NARA_-_557087.tif.jpg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPositionY: '50%'
+        }}
+      >
+        <Container
+          sx={{ display: 'flex', alignItems: 'top', minHeight: '60vh' }}
+        >
+          <Card
+            sx={{
+              maxWidth: '700px',
+              bg: '#AA7B78',
+              border: '3px dashed white',
+              height: 'min-content',
+              p: [3, 3, 3],
+              mt: 4,
+              fontSize: '1.3em',
+              color: 'white'
+            }}
+          >
+            <b>Stage 3: The Empty Plains</b>
+            <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </Card>
+        </Container>
+      </Box>
+      <Box
+        sx={{
+          minHeight: '40vh',
+          color: 'white',
+          borderTop: '8px solid #36271C',
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://261.com/wp-content/gallery/super-dome/imgp0900web.jpg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPositionY: '20%'
+        }}
+      >
+        <Container
+          sx={{ display: 'flex', alignItems: 'top', minHeight: '60vh' }}
+        >
+          <Card
+            sx={{
+              maxWidth: '700px',
+              bg: '#5F8893',
+              border: '3px dashed white',
+              height: 'min-content',
+              p: [3, 3, 3],
+              mt: 4,
+              fontSize: '1.3em',
+              color: 'white'
+            }}
+          >
+            <b>Our ride: the TBD</b>
+            <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </Card>
+        </Container>
+      </Box>
     </>
   )
 }
