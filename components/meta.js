@@ -4,14 +4,12 @@ export default ({
   name = 'Hack Club',
   title = 'The Hacker Zephyr',
   description = '',
-  image = 'https://yourproject.vercel.app/card.png',
-  url = 'https://yourproject.vercel.app/'
+  image = 'https://slack-oauth-starter-test-xy120-lvt1hu7ym.hackclub.dev/meta.png'
 }) => (
   <Head>
     <title>{title}</title>
     <meta property="og:title" content={title} />
     <meta name="twitter:title" content={title} />
-    <meta name="og:url" content={url} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={name} />
     <meta name="description" content={description} />
