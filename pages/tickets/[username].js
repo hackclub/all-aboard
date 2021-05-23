@@ -65,13 +65,13 @@ export default function App({ username, name }) {
               />
             </Tilt>
             <Box sx={{ mt: 3, textAlign: 'center' }}>
-              <Button variant="lg" sx={{ mr: 3 }}>
+              <Button sx={{ mr: 3 }}>
                 Share on Twitter
               </Button>
-              <Button variant="lg" sx={{ mr: 3 }}>
+              <Button sx={{ mr: 3 }}>
                 Share on LinkedIn
               </Button>
-              <Button variant="lg" as="a" download href={`/api/ticket?username=${username}`}>Download Image</Button>
+              <Button as="a" download href={`/api/ticket?username=${username}`}>Download Image</Button>
             </Box>
           </Box>
         </Flex>
