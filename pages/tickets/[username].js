@@ -25,7 +25,7 @@ export default function App({ username, name }) {
       <Meta
         title={`${name} is going from coast to coast on the Hacker Zephyr this summer.`}
         description="Starting in Burlington on the 16th of July and ending in LA on the 23rd."
-        image={`https://slack-oauth-starter-test-xy120-l3jkgdvbc.hackclub.dev/api/ticket?username=${username}`}
+        image={`https://slack-oauth-starter-test-xy120.hackclub.dev/api/ticket?username=${username}`}
       />
       <Container variant="copy">
         <Flex
