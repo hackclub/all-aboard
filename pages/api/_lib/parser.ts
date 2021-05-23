@@ -28,7 +28,7 @@ export function parseRequest(req: IncomingMessage) {
 
     const parsedRequest: ParsedRequest = {
         fileType: extension === 'jpeg' ? extension : 'png',
-        username: decodeURIComponent(username),
+        username,
         theme: theme === 'dark' ? 'dark' : 'light',
         md: md === '1' || md === 'true',
         fontSize: fontSize || '96px',
