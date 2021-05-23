@@ -18,7 +18,7 @@ export default function App() {
         sx={{
           minHeight: '100vh',
           color: 'white',
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://cloud-16uu33t6r-hack-club-bot.vercel.app/0california_zephyr_colorado_river_western_colorado.jpg)`,
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(/_next/image?url=https://cloud-16uu33t6r-hack-club-bot.vercel.app/0california_zephyr_colorado_river_western_colorado.jpg&w=1920&q=90)`,
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'fixed',
           backgroundSize: 'cover',
@@ -137,7 +137,7 @@ export default function App() {
           minHeight: '40vh',
           color: 'white',
           borderTop: '8px solid #36271C',
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg/640px-Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg)`,
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg/640px-Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg&w=1920&q=90)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPositionY: '80%'
@@ -170,7 +170,7 @@ export default function App() {
           minHeight: '40vh',
           color: 'white',
           borderTop: '8px solid #36271C',
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://upload.wikimedia.org/wikipedia/commons/2/24/Essayons_in_New_York_Harbor.jpg)`,
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/2/24/Essayons_in_New_York_Harbor.jpg&w=1920&q=90)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPositionY: '0%'
@@ -203,7 +203,7 @@ export default function App() {
           minHeight: '40vh',
           color: 'white',
           borderTop: '8px solid #36271C',
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/ROLLING_HILLS_IN_THE_OUTSKIRTS_OF_ATCHISON%2C_KANSAS%2C_SHOWING_AN_AREA_OF_LANDSCAPE_PAINTED_BY_GEORGE_CATLIN_BETWEEN..._-_NARA_-_557087.tif/lossy-page1-3000px-ROLLING_HILLS_IN_THE_OUTSKIRTS_OF_ATCHISON%2C_KANSAS%2C_SHOWING_AN_AREA_OF_LANDSCAPE_PAINTED_BY_GEORGE_CATLIN_BETWEEN..._-_NARA_-_557087.tif.jpg)`,
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/ROLLING_HILLS_IN_THE_OUTSKIRTS_OF_ATCHISON%2C_KANSAS%2C_SHOWING_AN_AREA_OF_LANDSCAPE_PAINTED_BY_GEORGE_CATLIN_BETWEEN..._-_NARA_-_557087.tif/lossy-page1-3000px-ROLLING_HILLS_IN_THE_OUTSKIRTS_OF_ATCHISON%2C_KANSAS%2C_SHOWING_AN_AREA_OF_LANDSCAPE_PAINTED_BY_GEORGE_CATLIN_BETWEEN..._-_NARA_-_557087.tif.jpg&w=1920&q=90)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPositionY: '50%'
@@ -236,7 +236,7 @@ export default function App() {
           minHeight: '40vh',
           color: 'white',
           borderTop: '8px solid #36271C',
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://261.com/wp-content/gallery/super-dome/imgp0900web.jpg)`,
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(/_next/image?url=https://261.com/wp-content/gallery/super-dome/imgp0900web.jpg&w=1920&q=90)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPositionY: '20%'
@@ -269,7 +269,7 @@ export default function App() {
           minHeight: '40vh',
           color: 'white',
           borderTop: '8px solid #36271C',
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(https://cloud-3q64c1iul-hack-club-bot.vercel.app/0mark_twain_zephyr_ya.png)`,
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.68) 19.45%, rgba(217, 167, 41, 0.29) 82.13%), url(/_next/image?url=https://cloud-3q64c1iul-hack-club-bot.vercel.app/0mark_twain_zephyr_ya.png&w=1920&q=90)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPositionY: '15%'
