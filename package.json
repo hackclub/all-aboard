@@ -14,13 +14,22 @@
     "@hackclub/theme": "^0.3.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
-    "next": "10.2.2",
+    "@octokit/core": "^3.4.0",
+    "airtable-plus": "^1.0.4",
+    "chrome-aws-lambda": "^9.1.0",
+    "marked": "^2.0.5",
     "next": "^10.2.2",
-    "react": "17.0.2",
+    "palx": "^1.0.3",
+    "puppeteer-core": "^9.1.1",
     "react": "^17.0.2",
-    "react-dom": "17.0.2",
     "react-dom": "^17.0.2",
+    "react-tilt": "^0.1.4",
     "theme-ui": "^0.8.4",
+    "twemoji": "^13.0.2",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.6",
+    "typescript": "^4.2.4"
   }
 }

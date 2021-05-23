@@ -9,11 +9,12 @@ import {
   Flex,
   Link
 } from 'theme-ui'
-import { useEffect } from 'react'
+import Meta from '../components/meta'
 
 export default function App() {
   return (
     <>
+      <Meta />
       <Box
         sx={{
           minHeight: '100vh',
