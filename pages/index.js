@@ -9,6 +9,7 @@ import {
   Flex,
   Link
 } from 'theme-ui'
+import { useEffect } from 'react'
 
 export default function App() {
   return (
@@ -30,7 +31,8 @@ export default function App() {
             alignItems: ['flex-end', 'center'],
             minHeight: '100vh',
             textShadow: 'card',
-            pb: [5, 0]
+            py: 3,
+            pb: [5, 3]
           }}
         >
           <Box sx={{ maxWidth: '800px' }}>
