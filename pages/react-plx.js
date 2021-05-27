@@ -11,7 +11,7 @@ const sceneNames = {
   'la': 'la',
 }
 
-const getParallaxData = (ref, idx) => {
+const getParallaxData = (cssProp1, idx) => {
   const start = (idx-1)*100
   const end   = (idx-0)*100
   const mid   = start + (end-start)/2
@@ -21,12 +21,7 @@ const getParallaxData = (ref, idx) => {
       start: `${start}vh`,
       end:   `${end}vh`,
       properties: [
-        {
-          startValue: -20,
-          endValue:    120,
-          property: 'translateX',
-          unit: '%',
-        },
+        {...cssProp1},
       ],
     }, {
       // start: 'self',
@@ -61,11 +56,10 @@ const PlxComp = (props) => {
   // if (typeof window !== 'undefined') {
   //   viewHeight = window.innerHeight
   // }
-  const ref = useRef()
   return (
     <Plx
       style={{opacity: 0, }}
-      parallaxData={getParallaxData(ref, props.idx)}
+      parallaxData={getParallaxData(props.cssProp1, props.idx)}
       animateWhenNotInViewport={false}
     >
       {props.children}
@@ -79,41 +73,155 @@ const Component = (props) => {
       {/* <div style={{minHeight: '100vh'}}>
         <h1>Hi Hack Club!</h1>
       </div> */}
-      <PlxComp idx={1}>
+      <PlxComp idx={1} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue: -100,
+        endValue:    100,
+      }}>
         <div style={{}}>
-          <h1>Burlington,Vermont</h1>
+          <h1>Burlington</h1>
+          <br /><br />
         </div>
       </PlxComp>
-      <PlxComp idx={2}>
+      <PlxComp idx={1} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue:  100,
+        endValue:   -100,
+      }}>
         <div style={{}}>
-          <h1>New York City, New York</h1>
+          <br /><br />
+          <h1>Vermont</h1>
         </div>
       </PlxComp>
-      <PlxComp idx={3}>
+
+      <PlxComp idx={2} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue: 100,
+        endValue:  -100,
+      }}>
         <div style={{}}>
-          <h1>Chicago, Illinois</h1>
+          <h1>New York City</h1>
+          <br /><br />
         </div>
       </PlxComp>
-      <PlxComp idx={4}>
+      <PlxComp idx={2} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue:-100,
+        endValue:   100,
+      }}>
         <div style={{}}>
-          <h1>Denver, Colorado</h1>
+          <br /><br />
+          <h1>New York</h1>
         </div>
       </PlxComp>
-      <PlxComp idx={5}>
+
+      <PlxComp idx={3} cssProp1={{
+        property: 'translateY',
+        unit: '%',
+        startValue: -100,
+        endValue:    100,
+      }}>
         <div style={{}}>
-          <h1>San Francisco, California</h1>
+          <h1>Chicago</h1>
+          <br /><br />
         </div>
       </PlxComp>
-      <PlxComp idx={6}>
+      <PlxComp idx={3} cssProp1={{
+        property: 'translateY',
+        unit: '%',
+        startValue:  100,
+        endValue:   -100,
+      }}>
         <div style={{}}>
-          <h1>Los Angeles, California</h1>
+          <br /><br />
+          <h1>Illinois</h1>
         </div>
       </PlxComp>
-      <PlxComp idx={7}>
+
+      <PlxComp idx={4} cssProp1={{
+        property: 'translateY',
+        unit: '%',
+        startValue:  100,
+        endValue:   -100,
+      }}>
+        <div style={{}}>
+          <h1>Denver</h1>
+          <br /><br />
+        </div>
+      </PlxComp>
+      <PlxComp idx={4} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue:  100,
+        endValue:   -100,
+      }}>
+        <div style={{}}>
+          <br /><br />
+          <h1>Colorado</h1>
+        </div>
+      </PlxComp>
+
+      <PlxComp idx={5} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue: -100,
+        endValue:    100,
+      }}>
+        <div style={{}}>
+          <h1>San Francisco</h1>
+          <br /><br />
+        </div>
+      </PlxComp>
+      <PlxComp idx={5} cssProp1={{
+        property: 'translateY',
+        unit: '%',
+        startValue:  100,
+        endValue:   -100,
+      }}>
+        <div style={{}}>
+          <br /><br />
+          <h1>California</h1>
+        </div>
+      </PlxComp>
+
+      <PlxComp idx={6} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue: -100,
+        endValue:    100,
+      }}>
+        <div style={{}}>
+          <h1>Los Angeles</h1>
+          <br /><br />
+        </div>
+      </PlxComp>
+      <PlxComp idx={6} cssProp1={{
+        property: 'translateX',
+        unit: '%',
+        startValue:  100,
+        endValue:   -100,
+      }}>
+        <div style={{}}>
+          <br /><br />
+          <h1>California</h1>
+        </div>
+      </PlxComp>
+
+      <PlxComp idx={7} cssProp1={{
+        property: 'transformX',
+        unit: '%',
+        startValue: 100,
+        endValue:   -25,
+      }}>
         <div style={{}}>
           <h1>~ FIN ~</h1>
         </div>
       </PlxComp>
+
       {/* <div style={{minHeight: '100vh'}}></div> */}
       <style>
         {`
@@ -131,7 +239,6 @@ const Component = (props) => {
           position: fixed;
         }
         .Plx > div {
-          flex: 1;
         }
         `}
       </style>
