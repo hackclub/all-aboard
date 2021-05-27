@@ -32,6 +32,17 @@ export default async (req, res) => {
       .then(r => {
         results.loginRecord = r[0]
         results.prefillFields['Application Number'] = results.loginRecord.id
+        console.log(results)
+        fetch(`https://airbridge.hackclub.com/v0.1/appYNERZpoDo0XMUW/Application Login?authKey=${AIRBRIDGE_KEY}&meta=true`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            id: results.loginRecord.id,
+            fields: {
+              'Slack ID': results.authData.authed_user.id
+            }
+          })
+        })
       })
   ])
 
@@ -67,11 +78,7 @@ export default async (req, res) => {
       })
     })
 
-  console.log(results.prefillFields)
-
-  // const prefillFields = {
-  //   'Application Number': results.record.id
-  // }
+  res.redirect(`https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Number=${results.prefillFields['Application Number']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`)
 
   res.status(200).end()
 }
