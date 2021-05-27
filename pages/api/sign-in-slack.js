@@ -18,7 +18,7 @@ export default async (req, res) => {
     "https://slack.com/oauth/v2/authorize",
     "?client_id=", SLACK_CLIENT_ID,
     "&user_scope=identity.basic",
-    "&redirect_uri=https://8cca7cbbef33.ngrok.io/api/slack-verification-code",
+    "&redirect_uri=",
     `&state=${uuid}`,
     "&team=",
   ].join('')
