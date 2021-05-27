@@ -12,22 +12,41 @@ const sceneNames = {
 }
 
 const getParallaxData = (ref, idx) => {
-  console.log(ref)
+  const start = (idx-1)*100
+  const end   = (idx-0)*100
+  const mid   = start + (end-start)/2
   const parallaxData = [
     {
       // start: 'self',
-      start: `${(idx-1)*100}vh`,
-      end:   `${(idx-0)*100}vh`,
+      start: `${start}vh`,
+      end:   `${end}vh`,
       properties: [
         {
-          startValue: -10,
-          endValue:   100,
+          startValue: -20,
+          endValue:    120,
           property: 'translateX',
           unit: '%',
         },
+      ],
+    }, {
+      // start: 'self',
+      start: `${start}vh`,
+      end:   `${mid}vh`,
+      properties: [
         {
           startValue: 0,
           endValue:   1,
+          property: 'opacity',
+        },
+      ],
+    },  {
+      // start: 'self',
+      start: `${mid}vh`,
+      end:   `${end}vh`,
+      properties: [
+        {
+          startValue: 1,
+          endValue:   0,
           property: 'opacity',
         },
       ],
@@ -47,7 +66,7 @@ const PlxComp = (props) => {
     <Plx
       style={{opacity: 0, }}
       parallaxData={getParallaxData(ref, props.idx)}
-      animateWhenNotInViewport={true}
+      animateWhenNotInViewport={false}
     >
       {props.children}
     </Plx>
