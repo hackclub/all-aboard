@@ -58,7 +58,13 @@ const PlxComp = (props) => {
   // }
   return (
     <Plx
-      style={{opacity: 0, }}
+      style={{
+        opacity: 0,
+        backgroundImage: props.imgSrc,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover', // FIXME: literally everyone says not to do this
+      }}
       parallaxData={getParallaxData(props.cssProp1, props.idx)}
       animateWhenNotInViewport={false}
     >
@@ -73,26 +79,48 @@ const Component = (props) => {
       {/* <div style={{minHeight: '100vh'}}>
         <h1>Hi Hack Club!</h1>
       </div> */}
-      <PlxComp idx={1} cssProp1={{
-        property: 'translateX',
-        unit: '%',
-        startValue: -100,
-        endValue:    100,
-      }}>
-        <div style={{}}>
-          <h1>Burlington</h1>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/0.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: -150, endValue: 100, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/1.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: 100, endValue: -150, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/2.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: -200, endValue: 100, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/3.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: 200, endValue: -100, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/4.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: -100, endValue: 200, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/5.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: 100, endValue: -200, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/6.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: -150, endValue: 150, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/7.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: 150, endValue: -150, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/8.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: 200, endValue: -250, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="url(/train-nyc-parallax/9.png)"
+          cssProp1={{property: 'translateX', unit: '%', startValue: -250, endValue: 200, }}>
+      </PlxComp>
+      <PlxComp idx={1} imgSrc="none"
+          cssProp1={{property: 'translateX', unit: '%', startValue: -100, endValue: 100, }}>
+        <div>
+          <h1>NYC</h1>
           <br /><br />
         </div>
       </PlxComp>
-      <PlxComp idx={1} cssProp1={{
-        property: 'translateX',
-        unit: '%',
-        startValue:  100,
-        endValue:   -100,
-      }}>
-        <div style={{}}>
-          <br /><br />
-          <h1>Vermont</h1>
+      <PlxComp idx={1} imgSrc="none"
+          cssProp1={{property: 'translateX', unit: '%', startValue: 100, endValue: -100, }}>
+        <div>
+            <br /><br />
+            <h1>New York</h1>
         </div>
       </PlxComp>
 
