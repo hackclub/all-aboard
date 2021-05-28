@@ -123,7 +123,7 @@ export default function App() {
   ]
   return (
     <Box
-      sx={{ bg: '#FD5F38', minHeight: '100vh', color: 'white', py: 4, pt: 0, overflowX: 'hidden' }}
+      sx={{ bg: '#C44D4D', minHeight: '100vh', color: 'white', py: 4, pt: 0, overflowX: 'hidden' }}
     >
       <Head>
         <script src="https://cursor-chat-multiplayer.sampoder.repl.co/socket.io/socket.io.js"></script>
