@@ -201,8 +201,8 @@ export default function App() {
           </p>
             <p>
               <Flex>
-                {signatures.map(image => (
-                  <Image src={image} sx={{ height: '80px', mr: '8px' }} />
+                {signatures.map((image, index) => (
+                  <Image src={image} key={index} sx={{ height: '80px', mr: '8px' }} />
                 ))}
               </Flex>
             </p>
