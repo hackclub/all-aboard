@@ -135,17 +135,19 @@ export default function App() {
           sx={{
             borderRadius: '4px',
             bg: 'white',
-            width: 'calc(100% + 3px)',
-            ml: '-1.5px',
-            py: '1.5px',
-            display: 'flex',
-            justifyContent: 'center',
+            m: [0, 1, 4],
+            p: [2, 4],
             textAlign: 'left', mb: 3, mt: 4
           }}
         >
         <Container
-          sx={{ border: '1px dashed black', borderRadius: '4px', color: 'black',width: 'calc(100% - 3px)', }}
+          sx={{ border: '1px dashed black', borderRadius: '4px', color: 'black'}}
         >
+          <Image src="https://cloud-kjy0691u4.vercel.app/1coat-of-arms.jpg" sx={{mx: 'auto', my: [2, 3], display: 'block', height: ['3em', '4em']}}/>
+          <Heading sx={{ textAlign: 'center', textTransform: 'uppercase', color: 'black', my: [2, 3] }}>
+            Postal Telegram – Immediate
+          </Heading>
+          <hr />
           <p>Every summer Hack Club does something special.</p>
           <p>
             In 2019 we brought 75 Hack Club leaders to San Francisco for
