@@ -13,6 +13,7 @@ import {
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Meta from '../components/meta'
+import Header from '../components/head'
 
 let signatures = [
   'https://github.com/hackclub/workshops/blob/main/public/signature-light.png?raw=true',
@@ -122,31 +123,16 @@ export default function App() {
   ]
   return (
     <Box
-      sx={{ bg: '#906B52', minHeight: '100vh', color: 'white', py: 4, pt: 0 }}
+      sx={{ bg: '#906B52', minHeight: '100vh', color: 'white', py: 4, pt: 0, overflowX: 'hidden' }}
     >
       <Head>
         <script src="https://cursor-chat-multiplayer.sampoder.repl.co/socket.io/socket.io.js"></script>
       </Head>
       <Meta />
-      <Box
-        sx={{
-          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.88) 19.45%, rgba(108, 90, 44, 0.79) 82.13%), url(https://cloud-16uu33t6r-hack-club-bot.vercel.app/0california_zephyr_colorado_river_western_colorado.jpg)`,
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-          backgroundSize: 'cover',
-          minHeight: '100vh',
-          display: 'flex',
-          width: '100vw',
-          justifyContent: 'center',
-          alignItems: 'center',
-          mb: 4
-        }}
-      >
-        <Image src="/title.gif" sx={{ width: '900px' }} />
-      </Box>
+      <Header />
       <Container>
         <Container
-          sx={{ border: '1px dashed white', borderRadius: '4px', mb: 3 }}
+          sx={{ border: '1px dashed white', borderRadius: '4px', mb: 3, mt: 4 }}
         >
           <p>Every summer Hack Club does something special.</p>
           <p>

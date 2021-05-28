@@ -17,6 +17,7 @@
     "@octokit/core": "^3.4.0",
     "airtable-plus": "^1.0.4",
     "chrome-aws-lambda": "^9.1.0",
+    "hls.js": "^1.0.4",
     "marked": "^2.0.5",
     "next": "^10.2.2",
     "palx": "^1.0.3",
