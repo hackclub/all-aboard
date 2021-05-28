@@ -131,8 +131,20 @@ export default function App() {
       <Meta />
       <Header />
       <Container>
+      <Box
+          sx={{
+            borderRadius: '4px',
+            bg: 'white',
+            width: 'calc(100% + 3px)',
+            ml: '-1.5px',
+            py: '1.5px',
+            display: 'flex',
+            justifyContent: 'center',
+            textAlign: 'left', mb: 3, mt: 4
+          }}
+        >
         <Container
-          sx={{ border: '1px dashed white', borderRadius: '4px', mb: 3, mt: 4 }}
+          sx={{ border: '1px dashed black', borderRadius: '4px', color: 'black',width: 'calc(100% - 3px)', }}
         >
           <p>Every summer Hack Club does something special.</p>
           <p>
@@ -173,7 +185,7 @@ export default function App() {
               ))}
             </Flex>
           </p>
-        </Container>
+        </Container></Box>
         <Box
           sx={{
             borderRadius: '4px',
@@ -353,6 +365,12 @@ export default function App() {
           background-image: url('cursor.svg');
           filter: grayscale(100%);
           opacity: 0.5;
+        }
+
+        html, body {
+          max-width: 100vw;
+          overflow-x: hidden;
+          width: 100vw;
         }
         `}
       </style>
