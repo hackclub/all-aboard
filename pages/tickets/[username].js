@@ -65,10 +65,16 @@ export default function App({ username, name }) {
               />
             </Tilt>
             <Box sx={{ mt: 3, textAlign: 'center' }}>
-              <Button sx={{ mr: 3 }} as="a" href={`https://twitter.com/intent/tweet?text=I%27m%20hacking%20from%20coast%20to%20coast%20with%20%40hackclub%20this%20summer%21%20https%3A%2F%2Fslack-oauth-starter-test-xy120.hackclub.dev%2Ftickets%2F${username}`}>
+              <Button
+                sx={{ mr: 3 }}
+                as="a"
+                href={`https://twitter.com/intent/tweet?text=I%27m%20hacking%20from%20coast%20to%20coast%20with%20%40hackclub%20this%20summer%21%20https%3A%2F%2Fslack-oauth-starter-test-xy120.hackclub.dev%2Ftickets%2F${username}`}
+              >
                 Share on Twitter
               </Button>
-              <Button as="a" download href={`/api/ticket?username=${username}`}>Download Ticket</Button>
+              <Button as="a" download href={`/api/ticket?username=${username}`}>
+                Download Ticket
+              </Button>
             </Box>
           </Box>
         </Flex>

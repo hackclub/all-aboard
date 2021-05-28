@@ -4,7 +4,7 @@ _metadata:
 display_information:
   name: The Conductor
   description: All Aboard!
-  background_color: "#251818"
+  background_color: '#251818'
 features:
   app_home:
     home_tab_enabled: false
