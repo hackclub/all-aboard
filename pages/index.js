@@ -69,17 +69,37 @@ export default function App() {
       }
     })
 
-    const handleMouseMove = event => {
-      
+    let xMousePos = 0
+    let yMousePos = 0
+    let xLastScrolled = 0
+    let yLastScrolled = 0
+    const emitMousePos = () => {
       if (userID) {
-        let x = (event.pageX / window.innerWidth) * 100
-        let y = (event.pageY / height) * 100
-        let data = { x, y, ts: Date.now() }
-        socket.emit('move user', data)
+        socket.emit('move user', {
+          x: (xMousePos / window.innerWidth) * 100,
+          y: (yMousePos / window.innerHeight) * 100,
+          ts: Date.now(),
+        })
       }
     }
-
+    const handleMouseMove = event => {
+      xMousePos = event.pageX
+      yMousePos = event.pageY
+      emitMousePos()
+    }
     document.onmousemove = handleMouseMove
+    const handleScroll = event => {
+      if (xLastScrolled != window.scrollX) {
+        xMousePos -= (xLastScrolled - window.scrollX)
+        xLastScrolled = window.scrollX
+      }
+      if (yLastScrolled != window.scrollY) {
+        yMousePos -= (yLastScrolled - window.scrollY)
+        yLastScrolled = window.scrollY
+      }
+      emitMousePos()
+    }
+    document.onscroll = handleScroll
   }, [])
   let questions = [
     {
