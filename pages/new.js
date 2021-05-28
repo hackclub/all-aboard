@@ -12,6 +12,7 @@ import {
 } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
+import Meta from '../components/meta'
 
 let signatures = [
   'https://github.com/hackclub/workshops/blob/main/public/signature-light.png?raw=true',
@@ -117,6 +118,7 @@ export default function App() {
       <Head>
         <script src="https://cursor-chat-multiplayer.sampoder.repl.co/socket.io/socket.io.js"></script>
       </Head>
+      <Meta />
       <Box
         sx={{
           bg: 'white',
