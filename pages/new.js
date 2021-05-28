@@ -16,10 +16,10 @@ import Meta from '../components/meta'
 import Header from '../components/head'
 
 let signatures = [
-  'https://github.com/hackclub/workshops/blob/main/public/signature-light.png?raw=true',
-  'https://github.com/hackclub/workshops/blob/main/public/signature-light.png?raw=true',
-  'https://github.com/hackclub/workshops/blob/main/public/signature-light.png?raw=true',
-  'https://github.com/hackclub/workshops/blob/main/public/signature-light.png?raw=true'
+  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
+  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
+  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
+  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true'
 ]
 
 export default function App() {
