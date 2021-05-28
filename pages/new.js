@@ -121,7 +121,10 @@ export default function App() {
       <Meta />
       <Box
         sx={{
-          bg: 'white',
+          backgroundImage: `linear-gradient(262.98deg, rgba(108, 90, 44, 0.88) 19.45%, rgba(108, 90, 44, 0.79) 82.13%), url(https://cloud-16uu33t6r-hack-club-bot.vercel.app/0california_zephyr_colorado_river_western_colorado.jpg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
           minHeight: '100vh',
           display: 'flex',
           width: '100vw',
@@ -130,7 +133,7 @@ export default function App() {
           mb: 4
         }}
       >
-        <Image src="/title.png" />
+        <Image src="/title.gif" sx={{ width: '900px'}} />
       </Box>
       <Container>
         <Container
