@@ -22,14 +22,22 @@ let signatures = [
 ]
 
 export default function App() {
-  const updateMousePosition = ev => {
-    console.log({ x: ev.clientX, y: ev.clientY })
-  }
-
   useEffect(() => {
-    const socket = io('https://cursor-chat-multiplayer.sampoder.repl.co', { transport : ['websocket'] })
+    const socket = io('https://cursor-chat-multiplayer.sampoder.repl.co', {
+      transport: ['websocket']
+    })
     let userID
     let initialized = false
+    var body = document.body,
+        html = document.documentElement
+
+      var height = Math.max(
+        body.scrollHeight,
+        body.offsetHeight,
+        html.clientHeight,
+        html.scrollHeight,
+        html.offsetHeight
+      )
 
     socket.on('assign id', ({ id }) => {
       userID = id
@@ -55,15 +63,16 @@ export default function App() {
       if (!el.dataset.lastMove || el.dataset.lastMove < ts + 50) {
         el.dataset.lastMove = ts
         el.style.transform = `translate(${(x * window.innerWidth) / 100}px, ${
-          (y * window.innerHeight) / 100
+          (y * height) / 100
         }px)`
       }
     })
 
     const handleMouseMove = event => {
+      
       if (userID) {
         let x = (event.pageX / window.innerWidth) * 100
-        let y = (event.pageY / window.innerHeight) * 100
+        let y = (event.pageY / height) * 100
         let data = { x, y, ts: Date.now() }
         socket.emit('move user', data)
       }
@@ -133,7 +142,7 @@ export default function App() {
           mb: 4
         }}
       >
-        <Image src="/title.gif" sx={{ width: '900px'}} />
+        <Image src="/title.gif" sx={{ width: '900px' }} />
       </Box>
       <Container>
         <Container
@@ -218,27 +227,57 @@ export default function App() {
           <Grid columns={3}>
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/2/24/Essayons_in_New_York_Harbor.jpg"
-              sx={{ objectFit: 'cover', borderRadius: '4px', height: 'calc(234px / 2)', width: '100%' }}
+              sx={{
+                objectFit: 'cover',
+                borderRadius: '4px',
+                height: 'calc(234px / 2)',
+                width: '100%'
+              }}
             />
             <Image
               src="https://261.com/wp-content/gallery/super-dome/imgp0900web.jpg"
-              sx={{ objectFit: 'cover', borderRadius: '4px', height: 'calc(234px / 2)', width: '100%' }}
+              sx={{
+                objectFit: 'cover',
+                borderRadius: '4px',
+                height: 'calc(234px / 2)',
+                width: '100%'
+              }}
             />
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg/640px-Vermont_Academy%2C_Saxtons_River%2C_Vermont.jpg"
-              sx={{ objectFit: 'cover', borderRadius: '4px', height: 'calc(234px / 2)', width: '100%' }}
+              sx={{
+                objectFit: 'cover',
+                borderRadius: '4px',
+                height: 'calc(234px / 2)',
+                width: '100%'
+              }}
             />
             <Image
               src="https://i.pinimg.com/originals/eb/d8/ed/ebd8edaa5fcaf01254ef442c8f3627b1.jpg"
-              sx={{ objectFit: 'cover', borderRadius: '4px', height: 'calc(234px / 2)', width: '100%' }}
+              sx={{
+                objectFit: 'cover',
+                borderRadius: '4px',
+                height: 'calc(234px / 2)',
+                width: '100%'
+              }}
             />
             <Image
               src="https://api.time.com/wp-content/uploads/2015/01/483781925.jpg"
-              sx={{ objectFit: 'cover', borderRadius: '4px', height: 'calc(234px / 2)', width: '100%' }}
+              sx={{
+                objectFit: 'cover',
+                borderRadius: '4px',
+                height: 'calc(234px / 2)',
+                width: '100%'
+              }}
             />
             <Image
               src="http://i.imgur.com/gxP87hS.jpg"
-              sx={{ objectFit: 'cover', borderRadius: '4px', height: 'calc(234px / 2)', width: '100%' }}
+              sx={{
+                objectFit: 'cover',
+                borderRadius: '4px',
+                height: 'calc(234px / 2)',
+                width: '100%'
+              }}
             />
           </Grid>
         </Grid>
