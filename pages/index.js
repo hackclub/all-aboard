@@ -11,6 +11,7 @@ import {
 import Meta from "../components/meta";
 import PlaceSlide from "../components/place-slide";
 import { RellaxWrapper } from "react-rellax-wrapper";
+import Lander from "../components/lander";
 
 
 const HorizontalRellax = ({children, ...params}) => (
@@ -25,6 +26,8 @@ const HorizontalRellax = ({children, ...params}) => (
 
 export default function App() {
   return (
+    <>
+    <Lander />
     <Box sx={{ display: 'block', overflowY: "hidden" }}>
       <Meta />
       <Box
@@ -314,5 +317,6 @@ export default function App() {
         </Container>
       </Box>
     </Box>
+    </>
   );
 }
