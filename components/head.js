@@ -11,8 +11,7 @@ const Static = () => (
             mt: '5vh',
             height: ['50vh !important', '90vh !important'],
             maxHeight: '90vh !important',
-            bg: '#011C36',
-            zIndex: 99
+            bg: '#011C36'
           }} />
   </Box>
 )
@@ -41,8 +40,7 @@ const MAINPART = () => {
             mt: '5vh',
             height: ['50vh !important', '90vh !important'],
             width: '100% !important',
-            maxHeight: '90vh !important',
-            zIndex: 99
+            maxHeight: '90vh !important'
           }}
           
         >
