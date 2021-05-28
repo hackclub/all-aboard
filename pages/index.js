@@ -30,15 +30,15 @@ export default function App() {
     let userID
     let initialized = false
     var body = document.body,
-        html = document.documentElement
+      html = document.documentElement
 
-      var height = Math.max(
-        body.scrollHeight,
-        body.offsetHeight,
-        html.clientHeight,
-        html.scrollHeight,
-        html.offsetHeight
-      )
+    var height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    )
 
     socket.on('assign id', ({ id }) => {
       userID = id
@@ -63,9 +63,8 @@ export default function App() {
       }
       if (!el.dataset.lastMove || el.dataset.lastMove < ts + 50) {
         el.dataset.lastMove = ts
-        el.style.transform = `translate(${(x * window.innerWidth) / 100}px, ${
-          (y * height) / 100
-        }px)`
+        el.style.transform = `translate(${(x * window.innerWidth) / 100}px, ${(y * height) / 100
+          }px)`
       }
     })
 
@@ -151,7 +150,7 @@ export default function App() {
       <Meta />
       <Header />
       <Container>
-      <Box
+        <Box
           sx={{
             borderRadius: '4px',
             bg: 'white',
@@ -160,54 +159,54 @@ export default function App() {
             textAlign: 'left', mb: 3, mt: 4
           }}
         >
-        <Container
-          sx={{ border: '1px dashed black', borderRadius: '4px', color: 'black'}}
-        >
-          <Image src="https://cloud-kjy0691u4.vercel.app/1coat-of-arms.jpg" sx={{mx: 'auto', my: [2, 3], display: 'block', height: ['3em', '4em']}}/>
-          <Heading sx={{ textAlign: 'center', textTransform: 'uppercase', color: 'black', my: [2, 3] }}>
-            Postal Telegram – Immediate
+          <Container
+            sx={{ border: '1px dashed black', borderRadius: '4px', color: 'black' }}
+          >
+            <Image src="https://cloud-kjy0691u4.vercel.app/1coat-of-arms.jpg" sx={{ mx: 'auto', my: [2, 3], display: 'block', height: ['3em', '4em'] }} />
+            <Heading sx={{ textAlign: 'center', textTransform: 'uppercase', color: 'black', my: [2, 3] }}>
+              Postal Telegram – Immediate
           </Heading>
-          <hr />
-          <p>Every summer Hack Club does something special.</p>
-          <p>
-            In 2019 we brought 75 Hack Club leaders to San Francisco for
-            Flagship. Last year, we gave a student $50k to distribute as
-            hardware grants, launched scrapbook, and hosted the Summer of
-            Making.
+            <hr />
+            <p>Every summer Hack Club does something special.</p>
+            <p>
+              In 2019 we brought 75 Hack Club leaders to San Francisco for
+              Flagship. Last year, we gave a student $50k to distribute as
+              hardware grants, launched scrapbook, and hosted the Summer of
+              Making.
           </p>
-          <p>
-            This year, we're chartering a train across America, and hosting the
-            world's longest hackathon (in miles).
+            <p>
+              This year, we're chartering a train across America, and hosting the
+              world's longest hackathon (in miles).
           </p>{' '}
-          <p>
-            We're starting at Hack Club HQ in Burlington Vermont, heading south
-            to New York City, then crossing the rockies on our way to San
-            Francisco, and end in Los Angeles.
+            <p>
+              We're starting at Hack Club HQ in Burlington Vermont, heading south
+              to New York City, then crossing the rockies on our way to San
+              Francisco, and end in Los Angeles.
           </p>
-          <p>
-            On the trip you'll code, make music, build, and write poetry. On the
-            train you'll meet startup founders, an acrobat, 3 political exiles,
-            and a philosopher.
+            <p>
+              On the trip you'll code, make music, build, and write poetry. On the
+              train you'll meet startup founders, an acrobat, 3 political exiles,
+              and a philosopher.
           </p>
-          <p>
-            This trip is a gift from Hack Club to you and asks nothing in
-            return. We want this to be a special, eclectic, and
-            thought-provoking journey that you'll remember for the rest of your
-            life.
+            <p>
+              This trip is a gift from Hack Club to you and asks nothing in
+              return. We want this to be a special, eclectic, and
+              thought-provoking journey that you'll remember for the rest of your
+              life.
           </p>
-          <p>
-            If you're interested in joining us, please register your interest
-            below. We are trying to fit as many Hack Clubbers as we can on The
-            Hacker Zephyr.
+            <p>
+              If you're interested in joining us, please register your interest
+              below. We are trying to fit as many Hack Clubbers as we can on The
+              Hacker Zephyr.
           </p>
-          <p>
-            <Flex>
-              {signatures.map(image => (
-                <Image src={image} sx={{ height: '80px', mr: '8px' }} />
-              ))}
-            </Flex>
-          </p>
-        </Container></Box>
+            <p>
+              <Flex>
+                {signatures.map(image => (
+                  <Image src={image} sx={{ height: '80px', mr: '8px' }} />
+                ))}
+              </Flex>
+            </p>
+          </Container></Box>
         <Box
           sx={{
             borderRadius: '4px',
@@ -305,8 +304,9 @@ export default function App() {
           <Heading as="h1">Frequently Asked Questions</Heading>
         </p>
         <Grid columns={2}>
-          {questions.map(({ question, answer }) => (
+          {questions.map(({ question, answer }, index) => (
             <Box
+              key={index}
               sx={{
                 border: '1px dashed white',
                 borderRadius: '4px',
