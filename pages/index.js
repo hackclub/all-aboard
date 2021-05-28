@@ -300,9 +300,7 @@ export default function App() {
             />
           </Grid>
         </Grid>
-        <p>
-          <Heading as="h1">Frequently Asked Questions</Heading>
-        </p>
+        <Heading as="h1" my={[1, 3]}>Frequently Asked Questions</Heading>
         <Grid columns={2}>
           {questions.map(({ question, answer }, index) => (
             <Box
