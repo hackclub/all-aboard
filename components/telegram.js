@@ -6,8 +6,8 @@ const Telegram = () => (
       sx={{
         bg: 'white',
         backgroundImage: 'url("https://www.transparenttextures.com/patterns/beige-paper.png")',
-        border: ['none', null, null, '1px dashed black'],
-        borderRadius: ['0px',null, null, '4px'],
+        // border: ['none', null, null, '1px dashed black'],
+        borderRadius: ['0px',null, null, 6],
         color: 'black',
         mx: 0,
         my: [0, null, 5],
