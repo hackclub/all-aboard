@@ -13,7 +13,8 @@ const Photo = ({ alt, src }) => {
 
 const Gallery = () => (
   <Container sx={{ bg: '#011C36', my: [3, 5], p: 4 }}>
-    <Heading variant="title" my={[3,5]}>Oh, the Places You'll Go</Heading>
+    <Heading variant="title" mt={[3,5]}>Oh, the Places You'll Go</Heading>
+    <Heading variant="subtitle" mb={[3,5]}>You'll be spending time both on and off the train. Here's the view.</Heading>
     <Grid gap={2} columns={2, null, 4}>
       <Photo src="https://cloud-ggkutuzcq-hack-club-bot.vercel.app/0image_from_ios.jpg"
         alt="Hack Club HQ, Vermont" />
