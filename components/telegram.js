@@ -36,39 +36,41 @@ const Telegram = () => (
       >
         Postal Telegram – Immediate
       </Heading>
-      <p>Every summer Hack Club does something special.</p>
+      <p>Every summer Hack Clubbers do something special.</p>
       <p>
-        In 2019 we brought 75 Hack Club leaders to San Francisco for Flagship.
-        Last year, we gave a student $50k to distribute as hardware grants,
-        launched <a href="https://scrapbook.hackclub.com">Scrapbook</a>, and
-        hosted the <a href="https://scrapbook.hackclub.com">Summer of Making</a>
+        In 2019, 75 Hack Club leaders gathered in San Francisco for <a target="_blank" href="https://photos.google.com/share/AF1QipO3hb2mN-Q16icE-M16d-06uHyXLmvd3Rw6b_f_oosfAX9SnOvnouPOyO79P7pR7Q?key=anphZTNFUERPWXV3YnJQV2VzVVVFMFFVcGRDc3hB">Flagship</a>.
+      </p>
+      <p>
+        In 2020, 300 Hack Clubbers received $50,000 for hardware projects.
+        We launched <a target="_blank" href="https://scrapbook.hackclub.com">Scrapbook</a>, and
+        hosted the <a target="_blank" href="https://summer.hackclub.com">Summer of Making</a>
         .
       </p>
       <p>
-        This year, we're chartering a train across America, and hosting the
-        world's longest hackathon (in miles).
+        <strong>This year, we're chartering a train across America.</strong>
       </p>
       <p>
         We're starting at{' '}
-        <a href="https://www.google.com/maps/@44.3805392,-73.2272344,3a,75y,76.05h,92.38t/data=!3m7!1e1!3m5!1sOyTfQpxquSr-DfGqPz9SOw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DOyTfQpxquSr-DfGqPz9SOw%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D84.47771%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656">
-          Hack Club HQ in Burlington Vermont
-        </a>
-        {' '}on the 16th of July, heading south to New York City, then crossing the rockies on our way
-        to San Francisco, and end in Los Angeles on the 23rd of July.
+        <a target="_blank" href="https://goo.gl/maps/jNQB5kwYoLH11JqM6">
+          Hack Club HQ
+        </a> in Burlington, Vermont, heading south to New York City, west through Chicago, and crossing the Rockies on our way
+        to San Francisco. From there, we'll follow the Pacific Ocean and end in Los Angeles, where we'll finish at SpaceX.
       </p>
       <p>
-        On the trip you'll code, make music, build, and write poetry. On the
-        train you'll meet startup founders, an acrobat, 3 political exiles, and
-        a philosopher.
+        Onboard, we're hosting the world's longest hackathon: 3,502 miles long.
+      </p>
+      <p>
+        This won't be a regular hackathon. Imagine a travelling hacker festival, where the goal is simple: to make beautiful and interesting things with code.
+      </p>
+      <p>
+        The hackathon will begin when we see the Atlantic Ocean and ends at the Pacific Ocean in Los Angeles. With friends on The Hacker Zephyr, you'll meet eclectic guests, including clowns, political exiles, startup founders, and an acrobat.
       </p>
       <p>
         This trip is a gift from Hack Club to you and asks nothing in return. We
-        want this to be a special, eclectic, and thought-provoking journey that
-        you'll remember for the rest of your life.
+        want this to be a special, technical, and thought-provoking adventure that you'll remember for the rest of your life.
       </p>
       <p>
-        If you're interested in joining us, please register your interest below.
-        We are trying to fit as many Hack Clubbers as we can on The Hacker
+        Please register your interest below. We are trying to fit as many Hack Clubbers as we can on The Hacker
         Zephyr.
       </p>
       <hr />
