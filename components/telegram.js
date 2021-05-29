@@ -53,8 +53,8 @@ const Telegram = () => (
         <a href="https://www.google.com/maps/@44.3805392,-73.2272344,3a,75y,76.05h,92.38t/data=!3m7!1e1!3m5!1sOyTfQpxquSr-DfGqPz9SOw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DOyTfQpxquSr-DfGqPz9SOw%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D84.47771%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656">
           Hack Club HQ in Burlington Vermont
         </a>
-        , heading south to New York City, then crossing the rockies on our way
-        to San Francisco, and end in Los Angeles.
+        {' '}on the 16th of July, heading south to New York City, then crossing the rockies on our way
+        to San Francisco, and end in Los Angeles on the 23rd of July.
       </p>
       <p>
         On the trip you'll code, make music, build, and write poetry. On the
