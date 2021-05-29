@@ -1,19 +1,12 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Text,
-  Grid,
-} from 'theme-ui'
 import Banner from '../components/flag'
 import Meta from '../components/meta'
 import Header from '../components/header'
 import CTA from '../components/cta'
 import Telegram from '../components/telegram'
 import Gallery from '../components/gallery'
+import FAQ from '../components/faq'
 import Footer from '../components/footer'
 // import MultiplayerMouse from '../components/multiplayer-mouse'
-import questions from '../lib/questions'
 
 export default function App() {
   return (
@@ -23,28 +16,9 @@ export default function App() {
       {/* <MultiplayerMouse /> */}
       <Header />
       <Telegram />
-      <CTA />
       <Gallery />
-      <Container sx={{ mt: 2}}>
-        <Heading as="h1" my={[1, 3]} mb={[3, 3]}>
-          Appendix
-        </Heading>
-        <Grid columns={[1, 2]}>
-          {questions.map(({ question, answer }, index) => (
-            <Box
-              key={index}
-              sx={{
-                border: '1px dashed white',
-                borderRadius: '4px',
-                px: '16px',
-                py: '1em'
-              }}
-            >
-              <Text sx={{ fontWeight: '600' }}>{question}</Text> <br /> {answer}
-            </Box>
-          ))}
-        </Grid>
-      </Container>
+      <CTA />
+      <FAQ />
       <Footer />
       <style>
         {`
