@@ -1,24 +1,25 @@
 import { Container, Box, Image, Heading } from 'theme-ui'
 
 const Telegram = () => (
-  <Container variant="copy">
+  <Container p={['0px !important',1]}>
     <Box
       sx={{
         bg: 'white',
-        border: '1px dashed black',
-        borderRadius: '4px',
+        border: ['none', null, null, '1px dashed black'],
+        borderRadius: ['0px',null, null, '4px'],
         color: 'black',
-        mx: [0, 1, 4],
-        my: 5,
+        mx: 0,
+        my: [0, null, 5],
         boxShadow: 'card',
-        p: [2, 4]
+        p: [4, 5],
+        fontSize: '1.2em',
       }}
     >
       <Image
         src="https://cloud-kjy0691u4.vercel.app/1coat-of-arms.jpg"
         sx={{
           display: 'block',
-          height: ['3em', '4em'],
+          height: ['6em', '6em'],
           mx: 'auto',
           my: [2, 3]
         }}
@@ -76,7 +77,7 @@ const Telegram = () => (
       <hr />
       <Image
         src="./signatures/all.svg"
-        sx={{ mx: 'auto', my: [2, 3], display: 'block' }}
+        sx={{ mx: 'auto', my: [2, 3], display: 'block', minWidth: '75%' }}
       />
     </Box>
   </Container>
