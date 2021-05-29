@@ -5,6 +5,7 @@ const Telegram = () => (
     <Box
       sx={{
         bg: 'white',
+        backgroundImage: 'url("https://www.transparenttextures.com/patterns/beige-paper.png")',
         border: ['none', null, null, '1px dashed black'],
         borderRadius: ['0px',null, null, '4px'],
         color: 'black',
@@ -16,7 +17,7 @@ const Telegram = () => (
       }}
     >
       <Image
-        src="https://cloud-kjy0691u4.vercel.app/1coat-of-arms.jpg"
+        src="./coat-of-arms.png"
         sx={{
           display: 'block',
           height: ['6em', '6em'],
