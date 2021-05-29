@@ -24,7 +24,7 @@ export default async (req, res) => {
     '&user_scope=identity.basic',
     '&redirect_uri=',
     `&state=${uuid}`,
-    '&team='
+    '&team=T0266FRGM'
   ].join('')
 
   res.redirect(url)
