@@ -4,11 +4,11 @@ const Telegram = () => (
   <Container p={['0px !important',1]}>
     <Box
       sx={{
-        bg: 'white',
+        bg: '#e8e0cc',
         backgroundImage: 'url("https://www.transparenttextures.com/patterns/beige-paper.png")',
         // border: ['none', null, null, '1px dashed black'],
         borderRadius: ['0px',null, null, 6],
-        color: 'black',
+        color: '#222',
         mx: 0,
         my: [0, null, 5],
         boxShadow: 'card',
