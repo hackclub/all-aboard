@@ -59,6 +59,7 @@ const CTA = () => (
             <Text>One-Way Hacker</Text>
           </Box>
         </Button>
+        <Heading variant="subtitle">Register your interest now & we'll get back to you with further steps.</Heading>
       </Box>
     </Grid>
   </Flex>
