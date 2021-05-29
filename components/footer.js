@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <Container>
-      <Grid sx={{ pt: 5 }} columns={'2.8fr 1fr'}>
+      <Grid sx={{ pt: 5, pb: 3 }} columns={'2.8fr 1fr'}>
         <Flex sx={{ alignItems: 'center' }}>
           <Box>
             <Text as="p" sx={{ fontWeight: '800', pb: 1 }}>

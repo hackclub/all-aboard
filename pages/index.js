@@ -4,12 +4,9 @@ import {
   Heading,
   Text,
   Grid,
-  Image,
-  Flex,
-  Link
 } from 'theme-ui'
 import Meta from '../components/meta'
-import Header from '../components/head'
+import Header from '../components/header'
 import CTA from '../components/cta'
 import Telegram from '../components/telegram'
 import Gallery from '../components/gallery'
@@ -19,16 +16,7 @@ import questions from '../lib/questions'
 
 export default function App() {
   return (
-    <Box
-      sx={{
-        bg: '#C44D4D',
-        minHeight: '100vh',
-        color: 'white',
-        py: 4,
-        pt: 0,
-        overflowX: 'hidden'
-      }}
-    >
+    <>
       <Meta />
       {/* <MultiplayerMouse /> */}
       <Header />
@@ -65,8 +53,6 @@ export default function App() {
           height: 35px;
           width: 35px;
           border-radius: 50%;
-          /* border: 2px solid black; */
-          /* background-color: blue; */
           transition: 0.1s;
           background-image: url('cursor.svg');
           filter: grayscale(100%);
@@ -74,11 +60,10 @@ export default function App() {
         }
 
         html, body {
-          max-width: 100vw;
-          overflow-x: hidden;
-          width: 100vw;
           background: black;
           background: linear-gradient(180deg, rgba(196,77,77,1) 0%, rgba(196,77,77,1) 36%, rgba(1,28,54,1) 57%, rgba(1,28,54,1) 100%);
+          background: #C44D4D;
+          color: white;
         }
         *::selection {
           background: #e8e0cc !important;
@@ -88,6 +73,6 @@ export default function App() {
         }
         `}
       </style>
-    </Box>
+    </>
   )
 }

@@ -1,6 +1,5 @@
-import { Box, Card, Container, Flex, Image, Link, Heading } from 'theme-ui'
+import { Box, Image } from 'theme-ui'
 import usePrefersMotion from '../lib/use-prefers-motion'
-import useHasMounted from '../lib/use-has-mounted'
 
 const Static = () => (
   <Box
@@ -26,8 +25,7 @@ const Static = () => (
   </Box>
 )
 
-const MAINPART = () => {
-  const hasMounted = useHasMounted()
+const Header = () => {
   const prefersMotion = usePrefersMotion()
   if (prefersMotion) {
     return (
@@ -38,7 +36,6 @@ const MAINPART = () => {
           position: 'relative',
           bg: '#011C36',
           height: ['60vh', '100vh'],
-          width: '100vw'
         }}
       >
         <Box
@@ -48,15 +45,10 @@ const MAINPART = () => {
           playsInline
           duration={2000}
           sx={{
-            position: 'absolute',
-            bottom: 0,
-            top: 0,
-            left: 0,
-            right: 0,
-            mt: '5vh',
-            height: ['50vh !important', '90vh !important'],
-            width: '100% !important',
-            maxHeight: '90vh !important'
+            mx: 'auto',
+            height: '100%',
+            minWidth: '100%',
+            maxWidth: '32em',
           }}
         >
           <source src="/Untitled Project 300000.mp4" />
@@ -72,4 +64,4 @@ const MAINPART = () => {
   }
 }
 
-export default MAINPART
+export default Header
