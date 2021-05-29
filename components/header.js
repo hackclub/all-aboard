@@ -4,6 +4,7 @@ import usePrefersMotion from '../lib/use-prefers-motion'
 const Static = () => (
   <Box
     as="section"
+    className="backgroundVideoMania"
     sx={{
       overflow: 'hidden',
       position: 'relative',
@@ -31,6 +32,7 @@ const Header = () => {
     return (
       <Box
         as="section"
+        className="backgroundVideoMania"
         sx={{
           overflow: 'hidden',
           position: 'relative',
@@ -62,6 +64,11 @@ const Header = () => {
             America, Burlington Vermont - Los Angeles California
           </p>
         </Box>
+        <style>{`
+          @-moz-document url-prefix() {
+          .backgroundVideoMania { background-color: #011A2E }
+          }
+      `}</style>
       </Box>
     )
   } else {
