@@ -1,4 +1,4 @@
-import { Grid, Image } from 'theme-ui'
+import { Grid, Image, Container } from 'theme-ui'
 const Gallery = () => (
   <Container>
     <Grid columns={['2fr 3fr']} sx={{ my: '1em' }}>
