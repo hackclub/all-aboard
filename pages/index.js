@@ -4,24 +4,16 @@ import {
   Heading,
   Text,
   Grid,
-  Card,
   Image,
-  Button,
   Flex,
   Link
 } from 'theme-ui'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Head from 'next/head'
 import Meta from '../components/meta'
 import Header from '../components/head'
 import CTA from '../components/cta'
-
-let signatures = [
-  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
-  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
-  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
-  'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true'
-]
+import Telegram from '../components/telegram'
 
 export default function App() {
   useEffect(() => {
@@ -29,7 +21,6 @@ export default function App() {
       transport: ['websocket']
     })
     let userID
-    let initialized = false
     var body = document.body,
       html = document.documentElement
 
@@ -150,67 +141,9 @@ export default function App() {
       </Head>
       <Meta />
       <Header />
+      <Telegram />
+      <CTA />
       <Container>
-        <Box
-          sx={{
-            borderRadius: '4px',
-            bg: 'white',
-            m: [0, 1, 4],
-            p: [2, 4],
-            textAlign: 'left', mb: 3, mt: 4
-          }}
-        >
-          <Container
-            sx={{ border: '1px dashed black', borderRadius: '4px', color: 'black' }}
-          >
-            <Image src="https://cloud-kjy0691u4.vercel.app/1coat-of-arms.jpg" sx={{ mx: 'auto', my: [2, 3], display: 'block', height: ['3em', '4em'] }} />
-            <Heading sx={{ textAlign: 'center', textTransform: 'uppercase', color: 'black', my: [2, 3] }}>
-              Postal Telegram – Immediate
-          </Heading>
-            <hr />
-            <p>Every summer Hack Club does something special.</p>
-            <p>
-              In 2019 we brought 75 Hack Club leaders to San Francisco for
-              Flagship. Last year, we gave a student $50k to distribute as
-              hardware grants, launched scrapbook, and hosted the Summer of
-              Making.
-          </p>
-            <p>
-              This year, we're chartering a train across America, and hosting the
-              world's longest hackathon (in miles).
-          </p>{' '}
-            <p>
-              We're starting at Hack Club HQ in Burlington Vermont, heading south
-              to New York City, then crossing the rockies on our way to San
-              Francisco, and end in Los Angeles.
-          </p>
-            <p>
-              On the trip you'll code, make music, build, and write poetry. On the
-              train you'll meet startup founders, an acrobat, 3 political exiles,
-              and a philosopher.
-          </p>
-            <p>
-              This trip is a gift from Hack Club to you and asks nothing in
-              return. We want this to be a special, eclectic, and
-              thought-provoking journey that you'll remember for the rest of your
-              life.
-          </p>
-            <p>
-              If you're interested in joining us, please register your interest
-              below. We are trying to fit as many Hack Clubbers as we can on The
-              Hacker Zephyr.
-          </p>
-            <p>
-              <Flex>
-                {signatures.map((image, index) => (
-                  <Image src={image} key={index} sx={{ height: '80px', mr: '8px' }} />
-                ))}
-              </Flex>
-            </p>
-          </Container></Box>
-
-        <CTA />
-
         <Grid columns={['2fr 3fr']} sx={{ my: '1em' }}>
           <Image
             src="https://cloud-3q64c1iul-hack-club-bot.vercel.app/0mark_twain_zephyr_ya.png"
