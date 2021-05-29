@@ -8,7 +8,7 @@ const Flag = props => (
     <style jsx>{`
       a {
         display: none;
-        background-image: url(https://assets.hackclub.com/flag-orpheus-top.svg);
+        background-image: url(https://assets.hackclub.com/flag-orpheus-left.svg);
         background-repeat: no-repeat;
         background-position: top left;
         background-size: contain;
@@ -17,8 +17,8 @@ const Flag = props => (
         width: 112px;
         height: 48px;
         position: fixed;
-        top: 0;
-        left: 32px;
+        top: 32px;
+        left: 0;
         z-index: 999;
       }
       @media (min-width: 600px) {
