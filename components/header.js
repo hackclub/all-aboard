@@ -58,17 +58,12 @@ const Header = () => {
             maxHeight: '90vh !important'
           }}
         >
-          <source src="/Untitled Project 300000.mp4" />
+          <source src="/PLEASE WORK.mp4" />
           <p>
             This summer, we're closing Zoom. All aboard the Hacker Zephyr. Trans
             America, Burlington Vermont - Los Angeles California
           </p>
         </Box>
-        <style>{`
-          @-moz-document url-prefix() {
-          .backgroundVideoMania { background-color: #011A2E }
-          }
-      `}</style>
       </Box>
     )
   } else {
