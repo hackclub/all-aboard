@@ -37,7 +37,8 @@ export default async (req, res) => {
       .then(r => {
         results.loginRecord = r[0]
         results.prefillFields['Application Record ID'] = results.loginRecord.id
-        console.log(results)
+
+      }).then(_ => (
         fetch(
           `https://airbridge.hackclub.com/v0.1/appYNERZpoDo0XMUW/Application Login?authKey=${AIRBRIDGE_KEY}&meta=true`,
           {
@@ -51,21 +52,19 @@ export default async (req, res) => {
             })
           }
         )
-      })
+      ))
   ])
 
-  await fetch(
-    `https://airbridge.hackclub.com/v0.1/appYNERZpoDo0XMUW/Application Login?authKey=${AIRBRIDGE_KEY}`,
-    {
-      method: 'patch',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        'Slack ID': results.authData['authed_user']['id']
-      })
+  if (!results.prefillFields['Application Record ID']) {
+    const errorData = {
+      code,
+      state,
+      loginRecord: results.loginRecord,
     }
-  )
+    return res.send(
+      `Something went wrong. Please email zephyr@hackclub.com the following information: ${base64Encode(JSON.stringify(errorData))}`
+    ).end()
+  }
 
   await fetch(
     `https://airbridge.hackclub.com/v0.1/Operations/People?authKey=${AIRBRIDGE_KEY}&select={"filterByFormula":"{Slack ID}='${results.authData['authed_user']['id']}'"}`
@@ -89,11 +88,13 @@ export default async (req, res) => {
           results.prefillFields[field] = results.personRecord.fields[field]
         }
       })
+    }).catch(e => {
+      // ignore errors here– this is just to populate with extra info & it's ok
+      // if we fail
     })
 
   res.redirect(
     `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
   )
-
   res.status(200).end()
 }
