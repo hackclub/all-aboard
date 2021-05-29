@@ -36,7 +36,7 @@ export default async (req, res) => {
       .then(r => r.json())
       .then(r => {
         results.loginRecord = r[0]
-        results.prefillFields['Application Number'] = results.loginRecord.id
+        results.prefillFields['Application Record ID'] = results.loginRecord.id
         console.log(results)
         fetch(
           `https://airbridge.hackclub.com/v0.1/appYNERZpoDo0XMUW/Application Login?authKey=${AIRBRIDGE_KEY}&meta=true`,
@@ -92,7 +92,7 @@ export default async (req, res) => {
     })
 
   res.redirect(
-    `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Number=${results.prefillFields['Application Number']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
+    `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
   )
 
   res.status(200).end()
