@@ -67,7 +67,7 @@ const Telegram = () => (
       </p>
       <p>
         This trip is a gift from Hack Club to you and asks nothing in return. We
-        want this to be a special, technical, and thought-provoking adventure that you'll remember for the rest of your life.
+        want this to be a special, technical, and soul-expanding adventure that you'll remember for the rest of your life.
       </p>
       <p>
         Please register your interest below. We are trying to fit as many Hack Clubbers as we can on The Hacker
