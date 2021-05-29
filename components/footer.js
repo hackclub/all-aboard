@@ -15,7 +15,7 @@ export default function Footer() {
         <Flex sx={{ alignItems: 'center' }}>
           <Box>
             <Text as="p" sx={{ fontWeight: '800', pb: 1 }}>
-              A Project by Hack Club
+              A Gift by Hack Club
             </Text>
             <Text as="p">
               <Link sx={{ color: 'white' }} href="https://hackclub.com">
