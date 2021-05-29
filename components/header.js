@@ -27,7 +27,6 @@ const Static = () => (
 )
 
 const Header = () => {
-  return <Static />
   const prefersMotion = usePrefersMotion()
   if (prefersMotion) {
     return (
