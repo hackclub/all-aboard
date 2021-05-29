@@ -60,7 +60,7 @@ const Telegram = () => (
         Onboard, we're hosting the world's longest hackathon: 3,502 miles long.
       </p>
       <p>
-        This won't be a regular hackathon. Imagine a travelling hacker festival, where the goal is simple: to make beautiful and interesting things with code.
+        This won't be a regular hackathon. Imagine a travelling hacker festival, where the goal is to make beautiful and interesting things with code.
       </p>
       <p>
         The hackathon begins when we see the Atlantic Ocean and ends at the Pacific Ocean in Los Angeles. On The Hacker Zephyr, you'll meet eclectic guests, including clowns, political exiles, startup founders, and an acrobat.
