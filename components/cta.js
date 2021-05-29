@@ -32,7 +32,7 @@ const CTA = () => (
         <Box>
           <Heading sx={{ fontSize: 6 }}>Apply Now</Heading>
           <Text as="p" sx={{ fontStyle: 'italic', mt: 2 }}>
-            Open until July 12th, 2021
+            Open until June 4th, 2021
           </Text>
         </Box>
       </Box>
