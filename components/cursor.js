@@ -3,7 +3,7 @@ const GhostCursor = ({
   x,
   y
 }) => (
-  <Image src="cursor.png" sx={{
+  <Image src="./cursors/cursor.png" sx={{
     transform: `translate(${x}px, ${y}px)`,
     position: 'fixed',
   }} />
