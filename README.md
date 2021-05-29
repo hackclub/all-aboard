@@ -1,8 +1,8 @@
 ![](./public/meta.png)
 
-# Hack Club Zephyr website
+# Hacker Zephyr
 
-_Created using [Hack Club Theme Starter](https://github.com/hackclub/theme-starter)_
+_Created using Theme UI & Next.js. Based on [Hack Club Theme Starter](https://github.com/hackclub/theme-starter)._
 
 ## Usage
 
