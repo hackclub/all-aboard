@@ -10,6 +10,7 @@ const Telegram = () => (
         color: 'black',
         mx: [0, 1, 4],
         my: 5,
+        boxShadow: 'card',
         p: [2, 4]
       }}
     >

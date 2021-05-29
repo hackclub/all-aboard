@@ -39,7 +39,7 @@ export default function App() {
         <Heading as="h1" my={[1, 3]}>
           Appendix
         </Heading>
-        <Grid columns={2}>
+        <Grid columns={[1, 2]}>
           {questions.map(({ question, answer }, index) => (
             <Box
               key={index}
