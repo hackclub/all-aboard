@@ -31,7 +31,7 @@ const FAQ = () => (
         >
           <Text sx={{
             fontWeight: '700',
-            mb: '0.6em',
+            mb: '0.4em',
             // linHeight: '1em',
             display: 'block',
           }}>{question}</Text>
