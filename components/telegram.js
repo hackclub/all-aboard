@@ -72,8 +72,7 @@ const Telegram = () => (
         want this to be a special, technical, and soul-expanding adventure that you'll remember for the rest of your life.
       </p>
       <p>
-        Please register your interest below. We are trying to fit as many Hack Clubbers as we can on The Hacker
-        Zephyr.
+        Please register your interest below. We are trying to fit as many Hack Clubbers as we can on&nbsp;The&nbsp;Hacker&nbsp;Zephyr.
       </p>
       <hr />
       <Image
