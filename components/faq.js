@@ -12,7 +12,7 @@ const FAQ = () => (
     mt: 2,
     // bg: '#011C36',
   }}>
-    <Heading as="h1" variant="title" my={[4, 4]} mb={4} sx={{ textShadow: 'text', textAlign: 'center' }}>
+    <Heading as="h1" variant="title" my={[4, 4]} mb={4} sx={{ textShadow: 'text', textAlign: ['left', 'center'] }}>
       Glossary
     </Heading>
     <Grid columns={[1, 2]} gap={'2em'}>
@@ -22,7 +22,7 @@ const FAQ = () => (
           sx={{
             border: '1px dashed white',
             borderRadius: '4px',
-            px: '2.5em',
+            px: ['1.5em', '2.5em'],
             pt: '2.0em',
             pb: '1.7em',
             textShadow: 'text',
@@ -31,10 +31,10 @@ const FAQ = () => (
         >
           <Text sx={{
             fontWeight: '700',
-            mb: '1.3em',
-            display: 'inline-block'
+            mb: '0.6em',
+            // linHeight: '1em',
+            display: 'block',
           }}>{question}</Text>
-          <br />
           <Text sx={{
             display: 'block',
             // mx: [3],
