@@ -12,6 +12,7 @@ const Route = () => (
       my: 2,
       mb: 4,
       mx: 'auto',
+      mr: '0px',
       display: 'block',
       height: '300px'
     }} />
