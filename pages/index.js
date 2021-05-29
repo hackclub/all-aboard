@@ -5,6 +5,7 @@ import {
   Text,
   Grid,
 } from 'theme-ui'
+import Banner from '../components/flag'
 import Meta from '../components/meta'
 import Header from '../components/header'
 import CTA from '../components/cta'
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <>
       <Meta />
+      <Banner />
       {/* <MultiplayerMouse /> */}
       <Header />
       <Telegram />
