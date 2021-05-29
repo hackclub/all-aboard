@@ -1,41 +1,57 @@
-import { Box, Heading, Text, Button } from 'theme-ui'
+import { Box, Heading, Text, Button, Grid, Container } from 'theme-ui'
 
 const buttonSX = {
   background: '#e28a89',
   color: 'black',
   minWidth: [5, 8],
   border: 'none',
-  m: 3,
-  mt: 4, 
+  m: 0,
+  mt: 0,
   p: 4,
+  width: '100%',
+  boxShadow: 'card',
   border: '1px dashed #e8e0cc',
   ':hover,:focus': {
-    border: '1px dashed black'
+    boxShadow: 'elevated'
   }
 }
 
 const CTA = () => (
-  <Box
-    sx={{
-      textAlign: 'center',
-      m: 5
-    }}
-  >
-    <Heading sx={{ fontSize: 7 }}>Apply Now</Heading>
-    <Button sx={buttonSX} as="a" href="/api/sign-in-slack" target="_blank">
-      <Heading sx={{ mb: [1, 3] }}>Hacker Zephyr</Heading>
-      <Box sx={{ display: 'flex' }}>
-        <Text sx={{ textTransform: 'uppercase' }}>
-          <Text sx={{ fontWeight: 'bold' }}>0¢</Text> Fare
-        </Text>
-        <Text sx={{ mx: '4px'}}>|</Text>
-        <Text>One-Way Hacker</Text>
+  <Container variant="copy">
+    <Grid columns={[1, 2]} sx={{ mx: [0, 1, 4], my: 5 }}>
+      <Box
+        sx={{
+          textAlign: ['center','left'],
+          m: 0,
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: ['center', 'left']
+        }}
+      >
+        <Box>
+          <Heading sx={{ fontSize: 6 }}>Apply Now</Heading>
+          <Text as="p" sx={{ fontStyle: 'italic', mt: 2 }}>
+            Open until July 12th, 2021
+          </Text>
+        </Box>
       </Box>
-    </Button>
-    <Text as="p" sx={{ fontStyle: 'italic' }}>
-      Open until July 12th, 2021
-    </Text>
-  </Box>
+      <Box>
+        <Button sx={buttonSX} as="a" href="/api/sign-in-slack" target="_blank">
+          <Heading sx={{ mb: [1, 2], textAlign: 'center' }}>
+            Hacker Zephyr
+          </Heading>
+          <Box sx={{ margin: 'auto', textAlign: 'center' }}>
+            <Text sx={{ textTransform: 'uppercase' }}>
+              <Text sx={{ fontWeight: 'bold' }}>0¢</Text> Fare
+            </Text>
+            <Text sx={{ mx: '4px' }}>|</Text>
+            <Text>One-Way Hacker</Text>
+          </Box>
+        </Button>
+      </Box>
+    </Grid>
+  </Container>
 )
 
 export default CTA
