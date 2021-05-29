@@ -26,7 +26,7 @@ const Telegram = () => (
       <Heading
         sx={{
           color: 'black',
-          mb: [4, 5],
+          mb: [4, 4],
           mt: [2, 3],
           textAlign: 'center',
           textDecoration: 'underline',
