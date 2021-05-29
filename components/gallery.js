@@ -30,7 +30,7 @@ const Photo = ({ alt, src, height, display, width, backgroundPosition }) => {
 
 const Gallery = () => (
   <Container variant="container" p={[0]}>
-    <Box sx={{ bg: '#011C36', my: [3, 5], mt: [0, null, null, 1], p: [3, 4], borderRadius: ['none', null, null, '4px'], border: ['none', null, null, '1px dashed #e8e0cc'], boxShadow: 'card' }}>
+    <Box sx={{ bg: '#011C36', my: [0, null, null, 5], mt: [0, null, null, 1], p: [3, 4], borderRadius: ['none', null, null, '4px'], border: ['none', null, null, '1px dashed #e8e0cc'], boxShadow: 'card' }}>
       <Heading variant="title" sx={{ marginBlockStart: '0em', marginBlockEnd: '1em', mt: [1, 1], mb: 3 }}>
         Oh, the Places You'll Go
       </Heading>
