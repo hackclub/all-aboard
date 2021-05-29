@@ -3,9 +3,7 @@ import Head from 'next/head'
 export default ({
   name = 'Hack Club',
   title = 'The Hacker Zephyr',
-  description = `In 1863 the first transcontinental railroad bridged the east to west coast of America. 
-                 This summer, Hack Clubbers will make a pilgrimage out west for not only the hackathon 
-                 of a lifetime but also the adventure of a lifetime.`,
+  description = `Every summer Hack Club does something special. This year, we're chartering a train across America, and hosting the world's longest hackathon (in miles).`,
   image = 'https://slack-oauth-starter-test-xy120.hackclub.dev/meta.png'
 }) => (
   <Head>
