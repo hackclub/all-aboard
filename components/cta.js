@@ -1,24 +1,34 @@
-import { Box, Heading, Text, Button, Grid, Container } from 'theme-ui'
+import { Box, Heading, Text, Button, Grid, Container, Flex } from 'theme-ui'
 
 const buttonSX = {
-  background: '#e28a89',
-  color: 'black',
+  background: '#759d3e',
+  color: 'white',
   minWidth: [5, 8],
+  maxWidth: '75wh',
   border: 'none',
   m: 0,
   mt: 0,
   p: 4,
   width: '100%',
   boxShadow: 'card',
-  border: '1px dashed #e8e0cc',
+  border: '4px dashed #eaeedc',
   ':hover,:focus': {
-    boxShadow: 'elevated'
+    boxShadow: 'elevated',
+    color: 'black',
   }
 }
 
 const CTA = () => (
-  <Container variant="copy">
-    <Grid columns={[1, 2]} sx={{ mx: [0, 1, 4], my: 5 }}>
+  <Flex sx={{
+    minHeight: '65vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '1.8em',
+    backgroundColor: '#011C36',
+  }}>
+    <Grid columns={[1, 2]} sx={{ mx: [3, 2, 4] }}>
       <Box
         sx={{
           textAlign: ['center','left'],
@@ -51,7 +61,7 @@ const CTA = () => (
         </Button>
       </Box>
     </Grid>
-  </Container>
+  </Flex>
 )
 
 export default CTA
