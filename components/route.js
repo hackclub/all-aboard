@@ -1,22 +1,23 @@
-import { Flex, Image } from 'theme-ui'
+import { Box, Flex, Image } from 'theme-ui'
 
 const Route = () => (
-  <Flex columns={2}>
+  <Box sx={{ display: ['block', 'flex'],flexDirection: ['row-reverse', 'row']}}>
     <Image src="./timeline.png" sx={{
-      my: 2,
-      mb: 4,
+      my: [0, 2],
+      mb: [0, 4],
       display: 'block',
-      height: '300px'
+      height: '300px',
     }} />
     <Image src="./route.svg" sx={{
-      my: 2,
-      mb: 4,
+      my: [0, 2],
+      mb: [0, 4],
       mx: 'auto',
       mr: '0px',
       display: 'block',
-      height: '300px'
+      height: '300px',
+      width: ['100vw', 'fit-content']
     }} />
-  </Flex>
+  </Box>
 )
 
 export default Route

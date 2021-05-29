@@ -24,7 +24,7 @@ export default function App() {
       <CTA />
       <Gallery />
       <Container sx={{ mt: 2}}>
-        <Heading as="h1" my={[1, 3]}>
+        <Heading as="h1" my={[1, 3]} mb={[3, 3]}>
           Appendix
         </Heading>
         <Grid columns={[1, 2]}>
