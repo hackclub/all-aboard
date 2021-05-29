@@ -77,6 +77,8 @@ export default function App() {
           max-width: 100vw;
           overflow-x: hidden;
           width: 100vw;
+          background: black;
+          background: linear-gradient(180deg, rgba(196,77,77,1) 0%, rgba(196,77,77,1) 36%, rgba(1,28,54,1) 57%, rgba(1,28,54,1) 100%);
         }
         a{
           color: inherit
