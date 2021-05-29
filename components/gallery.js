@@ -1,6 +1,6 @@
 import { Grid, Image, Container, Heading, Box, Text } from 'theme-ui'
 
-const Photo = ({ alt, src, height, display,width }) => {
+const Photo = ({ alt, src, height, display,width,backgroundPosition }) => {
   return (
     <Box sx={{ display, boxShadow: 'card' }}>
       <Box
@@ -15,7 +15,8 @@ const Photo = ({ alt, src, height, display,width }) => {
           height: ['150px', height],
           display: 'flex',
           alignItems: 'flex-end',
-          width
+          width,
+          backgroundPosition
         }}
       >
         <Box sx={{ color: 'black',bg: 'white', width: '100%', pt: ['8px', '8px'], pb: ['8px', '0px'], textAlign: 'center', display: ['none', 'block'] }}>
@@ -40,13 +41,8 @@ const Gallery = () => (<Container>
           height="190px"
         />
         <Photo
-          src="https://cloud-g4sxjumak-hack-club-bot.vercel.app/0image_from_ios__5_.jpg"
-          alt="View from Vermont HQ"
-          height="190px"
-        />
-        <Photo
-          src="https://cloud-a5q1goov4-hack-club-bot.vercel.app/0image.png"
-          alt="Our office in Vermont"
+          src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          alt="Times Square, NYC"
           height="190px"
         />
         <Photo
@@ -55,14 +51,21 @@ const Gallery = () => (<Container>
           height="190px"
         />
         <Photo
-          src="https://cloud-a5q1goov4-hack-club-bot.vercel.app/0image.png"
-          alt="Our office in Vermont"
+          src="https://images.unsplash.com/photo-1500445032980-ef63c4f210ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+          alt="The Rockies (Colorado)"
           height="190px"
         />
         <Photo
-          src="https://cloud-7gbjuxaig-hack-club-bot.vercel.app/6imgp0904-web.jpg"
-          alt="Our dining/observation car"
+          src="https://images.unsplash.com/photo-1534050359320-02900022671e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+          alt="The Streets of SF"
           height="190px"
+          backgroundPosition="bottom"
+        />
+        <Photo
+          src="https://images.unsplash.com/photo-1583307813854-7c6467413b38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          alt="Venice Beach, LA"
+          height="190px"
+          backgroundPosition="center"
         />
 
         {/* <Image
