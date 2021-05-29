@@ -14,6 +14,7 @@ import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Meta from '../components/meta'
 import Header from '../components/head'
+import CTA from '../components/cta'
 
 let signatures = [
   'https://github.com/hackclub/workshops/blob/main/public/signature-dark.png?raw=true',
@@ -207,36 +208,8 @@ export default function App() {
               </Flex>
             </p>
           </Container></Box>
-        <Box
-          sx={{
-            borderRadius: '4px',
-            bg: 'white',
-            width: 'calc(100% + 3px)',
-            ml: '-1.5px',
-            py: '1.5px',
-            display: 'flex',
-            justifyContent: 'center',
-            textAlign: 'center'
-          }}
-        >
-          <Button
-            sx={{
-              width: 'calc(100% - 3px)',
-              textAlign: 'left',
-              border: '1px dashed black',
-              margin: 'auto',
-              fontWeight: 600,
-              ':hover,:focus': {
-                boxShadow: 'none',
-                bg: 'white'
-              }
-            }}
-            as="a"
-            href="/api/sign-in-slack"
-          >
-            Apply for a ticket through Hack Club Slack (Closes 12th July)
-          </Button>
-        </Box>
+
+        <CTA />
 
         <Grid columns={['2fr 3fr']} sx={{ my: '1em' }}>
           <Image
