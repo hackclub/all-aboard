@@ -7,7 +7,11 @@ const buttonSX = {
   border: 'none',
   m: 3,
   mt: 4, 
-  p: 3
+  p: 4,
+  border: '1px dashed #e8e0cc',
+  ':hover,:focus': {
+    border: '1px dashed black'
+  }
 }
 
 const CTA = () => (
