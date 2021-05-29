@@ -8,90 +8,13 @@ import {
   Flex,
   Link
 } from 'theme-ui'
-import { useEffect } from 'react'
-import Head from 'next/head'
 import Meta from '../components/meta'
 import Header from '../components/head'
 import CTA from '../components/cta'
 import Telegram from '../components/telegram'
+// import MultiplayerMouse from '../components/multiplayer-mouse'
 
 export default function App() {
-  useEffect(() => {
-    const socket = io('https://cursor-chat-multiplayer.sampoder.repl.co', {
-      transport: ['websocket']
-    })
-    let userID
-    var body = document.body,
-      html = document.documentElement
-
-    var height = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight,
-      html.offsetHeight
-    )
-
-    socket.on('assign id', ({ id }) => {
-      userID = id
-    })
-    socket.on('user joined', ({ numUsers }) => {
-      console.log('another user joined, now at', numUsers)
-    })
-    socket.on('user left', ({ numUsers, id }) => {
-      console.log('another user left, now at', numUsers)
-      let el = document.querySelector(`#${id}`)
-      if (el) {
-        el.remove()
-      }
-    })
-    socket.on('user moved', ({ id, x, y, ts }) => {
-      let el = document.querySelector(`#${id}`)
-      if (!el) {
-        el = document.createElement('div')
-        el.className = 'cursor'
-        el.id = id
-        document.body.appendChild(el)
-      }
-      if (!el.dataset.lastMove || el.dataset.lastMove < ts + 50) {
-        el.dataset.lastMove = ts
-        el.style.transform = `translate(${(x * window.innerWidth) / 100}px, ${(y * height) / 100
-          }px)`
-      }
-    })
-
-    let xMousePos = 0
-    let yMousePos = 0
-    let xLastScrolled = 0
-    let yLastScrolled = 0
-    const emitMousePos = () => {
-      if (userID) {
-        socket.emit('move user', {
-          x: (xMousePos / window.innerWidth) * 100,
-          y: (yMousePos / window.innerHeight) * 100,
-          ts: Date.now(),
-        })
-      }
-    }
-    const handleMouseMove = event => {
-      xMousePos = event.pageX
-      yMousePos = event.pageY
-      emitMousePos()
-    }
-    document.onmousemove = handleMouseMove
-    const handleScroll = event => {
-      if (xLastScrolled != window.scrollX) {
-        xMousePos -= (xLastScrolled - window.scrollX)
-        xLastScrolled = window.scrollX
-      }
-      if (yLastScrolled != window.scrollY) {
-        yMousePos -= (yLastScrolled - window.scrollY)
-        yLastScrolled = window.scrollY
-      }
-      emitMousePos()
-    }
-    document.onscroll = handleScroll
-  }, [])
   let questions = [
     {
       question: 'Who is eligible to board the train?',
@@ -136,10 +59,8 @@ export default function App() {
     <Box
       sx={{ bg: '#C44D4D', minHeight: '100vh', color: 'white', py: 4, pt: 0, overflowX: 'hidden' }}
     >
-      <Head>
-        <script src="https://cursor-chat-multiplayer.sampoder.repl.co/socket.io/socket.io.js"></script>
-      </Head>
       <Meta />
+      {/* <MultiplayerMouse /> */}
       <Header />
       <Telegram />
       <CTA />
@@ -206,7 +127,7 @@ export default function App() {
             />
           </Grid>
         </Grid>
-        <Heading as="h1" my={[1, 3]}>Frequently Asked Questions</Heading>
+        <Heading as="h1" my={[1, 3]}>Appendix</Heading>
         <Grid columns={2}>
           {questions.map(({ question, answer }, index) => (
             <Box
