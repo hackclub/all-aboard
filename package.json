@@ -1,7 +1,10 @@
 {
-  "name": "@hackclub/theme-starter",
+  "name": "all-aboard",
   "version": "0.0.1",
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
+  "authors": [
+    "Sam Poder <sam@summer.hackclub.com>",
+    "Max Wofford <max@hackclub.com>"
+  ],
   "license": "MIT",
   "private": true,
   "scripts": {
