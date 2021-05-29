@@ -7,7 +7,7 @@ const buttonSX = {
   border: 'none',
   m: 3,
   mt: 4, 
-  p: 4
+  p: 3
 }
 
 const CTA = () => (
