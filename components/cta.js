@@ -56,7 +56,7 @@ const CTA = () => (
               <Text sx={{ fontWeight: 'bold' }}>0¢</Text> Fare
             </Text>
             <Text sx={{ mx: '4px' }}>|</Text>
-            <Text>One-Way Hacker</Text>
+            <Text>Round-Trip</Text>
           </Box>
         </Button>
         <Heading variant="subtitle">Register your interest now & we'll get back to you with further steps.</Heading>
