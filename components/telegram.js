@@ -65,7 +65,7 @@ const Telegram = () => (
         This won't be a regular hackathon. Imagine a travelling hacker festival, where the goal is to make beautiful and interesting things with code.
       </p>
       <p>
-        The hackathon begins when we see the Atlantic Ocean and ends at the Pacific Ocean in Los Angeles. On The Hacker Zephyr, you'll meet eclectic guests, including clowns, political exiles, startup founders, and an acrobat.
+        The hackathon begins when we see the Atlantic Ocean and ends at the Pacific Ocean in Los Angeles. On The Hacker Zephyr, you'll meet eclectic guests, including vaudevillians, political exiles, startup founders, and a contortionist.
       </p>
       <p>
         This trip is a gift from Hack Club to you and asks nothing in return. We
