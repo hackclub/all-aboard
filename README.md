@@ -32,7 +32,7 @@ _Created using Theme UI & Next.js. Based on [Hack Club Theme Starter](https://gi
 ---
 
 - [X] Need bulletpoint & comma in header
-- [ ] Background color is off on landing
+- [x] Background color is off on landing
 - [x] Telegram black is too dark
 - [x] Drop the dotted lines on telegram
 - [x] Orpheus flag top -> side
