@@ -59,7 +59,7 @@ const Telegram = () => (
         to San Francisco. From there, we'll follow the Pacific Ocean and end in Los Angeles, where we'll finish at SpaceX.
       </p>
       <p>
-        Onboard, we're hosting the world's longest hackathon: 3,502 miles long.
+        Onboard, we're hosting the world's longest hackathon on land: 3,502 miles long.
       </p>
       <p>
         This won't be a regular hackathon. Imagine a travelling hacker festival, where the goal is to make beautiful and interesting things with code.
