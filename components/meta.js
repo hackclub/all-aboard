@@ -3,7 +3,7 @@ import Head from 'next/head'
 export default ({
   name = 'Hack Club',
   title = 'The Hacker Zephyr',
-  description = `Every summer Hack Club does something special. This year, we're chartering a train across America, and hosting the world's longest hackathon (in miles).`,
+  description = `Every summer Hack Club does something special. This year, we're chartering a train across America, and hosting the world's longest hackathon on land (in miles).`,
   image = 'https://slack-oauth-starter-test-xy120.hackclub.dev/meta.png'
 }) => (
   <Head>
