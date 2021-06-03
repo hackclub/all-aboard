@@ -13,6 +13,7 @@ const Photo = ({ alt, src, height, display, width, backgroundPosition }) => {
           border: 'solid',
           position: 'relative',
           backgroundSize: 'cover',
+          borderRadius: 'small',
           height: ['150px', height],
           display: 'flex',
           alignItems: 'flex-end',
@@ -61,14 +62,14 @@ const Gallery = () => (
             height="190px"
           />
           <Photo
-            src="https://images.unsplash.com/photo-1534050359320-02900022671e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-            alt="The Streets of SF"
+            src="https://cloud-r47tfktl4-hack-club-bot.vercel.app/2img_1526.jpg"
+            alt="Neighborhood, two blocks from SF hotel"
             height="190px"
             backgroundPosition="bottom"
           />
           <Photo
-            src="https://images.unsplash.com/photo-1583307813854-7c6467413b38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            alt="Venice Beach, LA"
+            src="https://cloud-qh9vdrmup-hack-club-bot.vercel.app/0img_4175.jpg"
+            alt="El Segundo Beach, just west of SpaceX"
             height="190px"
             backgroundPosition="center"
           />
