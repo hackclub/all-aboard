@@ -86,7 +86,7 @@ export default async (req, res) => {
         ]
         fields.forEach(field => {
           if (results.personRecord.fields[field]) {
-            results.prefillFields[field] = results.personRecord.fields[field]
+            results.prefillFields[field] = encodeURIComponent(results.personRecord.fields[field])
           }
         })
       })
@@ -94,7 +94,6 @@ export default async (req, res) => {
     console.log('Issue getting ops info, skipping')
   }
 
-  const redirectUrl= `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
-  console.log({redirectUrl})
+  const redirectUrl = `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
   res.redirect(redirectUrl).end()
 }
