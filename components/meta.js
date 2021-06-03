@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default ({
+const Meta = ({
   name = 'Hack Club',
   title = 'The Hacker Zephyr',
   description = `Every summer Hack Club does something special. This year, we're chartering a train across America, and hosting the world's longest hackathon on land (in miles).`,
@@ -61,3 +61,5 @@ export default ({
     <link rel="manifest" href="/manifest.json"></link>
   </Head>
 )
+
+export default Meta
