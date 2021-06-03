@@ -66,32 +66,33 @@ export default async (req, res) => {
     ).end()
   }
 
-  await fetch(
-    `https://airbridge.hackclub.com/v0.1/Operations/People?authKey=${AIRBRIDGE_KEY}&select={"filterByFormula":"{Slack ID}='${results.authData['authed_user']['id']}'"}`
-  )
-    .then(r => r.json())
-    .then(r => {
-      results.personRecord = r[0]
-      const fields = [
-        'Full Name',
-        'Email',
-        'Address (state)',
-        'Address (country)',
-        'Address (city)',
-        'Address (zip code)',
-        'Address (first line)',
-        'Address (second line)',
-        'Phone Number'
-      ]
-      fields.forEach(field => {
-        if (results.personRecord.fields[field]) {
-          results.prefillFields[field] = results.personRecord.fields[field]
-        }
+  try {
+    await fetch(
+      `https://airbridge.hackclub.com/v0.1/Operations/People?authKey=${AIRBRIDGE_KEY}&select={"filterByFormula":"{Slack ID}='${results.authData.authed_user.id}'"}`
+    )
+      .then(r => r.json())
+      .then(r => {
+        results.personRecord = r[0]
+        const fields = [
+          'Full Name',
+          'Email',
+          'Address (state)',
+          'Address (country)',
+          'Address (city)',
+          'Address (zip code)',
+          'Address (first line)',
+          'Address (second line)',
+          'Phone Number'
+        ]
+        fields.forEach(field => {
+          if (results.personRecord.fields[field]) {
+            results.prefillFields[field] = results.personRecord.fields[field]
+          }
+        })
       })
-    }).catch(e => {
-      // ignore errors here– this is just to populate with extra info & it's ok
-      // if we fail
-    })
+  } catch (e) {
+    console.log('Issue getting ops info, skipping')
+  }
 
   res.redirect(
     `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
