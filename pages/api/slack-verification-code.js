@@ -94,8 +94,7 @@ export default async (req, res) => {
     console.log('Issue getting ops info, skipping')
   }
 
-  res.redirect(
-    `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
-  )
-  res.status(200).end()
+  const redirectUrl= `https://airtable.com/shrveiJhxET31yFj0?prefill_Application%20Record%20ID=${results.prefillFields['Application Record ID']}&prefill_Email%20Address=${results.prefillFields['Email']}&prefill_Name=${results.prefillFields['Full Name']}`
+  console.log({redirectUrl})
+  res.redirect(redirectUrl).end()
 }
