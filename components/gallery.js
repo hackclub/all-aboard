@@ -47,8 +47,8 @@ const Gallery = () => (
             height="190px"
           />
           <Photo
-            src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            alt="Times Square, NYC"
+            src="https://cloud-mf6zzzirr-hack-club-bot.vercel.app/0img_0964.jpg"
+            alt="Grand Central station, NYC"
             height="190px"
           />
           <Photo
