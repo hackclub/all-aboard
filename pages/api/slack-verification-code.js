@@ -37,23 +37,21 @@ export default async (req, res) => {
       .then(r => {
         results.loginRecord = r[0]
         results.prefillFields['Application Record ID'] = results.loginRecord.id
-
-      }).then(_ => (
-        fetch(
-          `https://airbridge.hackclub.com/v0.1/appYNERZpoDo0XMUW/Application Login?authKey=${AIRBRIDGE_KEY}&meta=true`,
-          {
-            method: 'PATCH',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              id: results.loginRecord.id,
-              fields: {
-                'Slack ID': results.authData.authed_user.id
-              }
-            })
-          }
-        )
-      ))
+      })
   ])
+  await fetch(
+    `https://airbridge.hackclub.com/v0.1/appYNERZpoDo0XMUW/Application Login?authKey=${AIRBRIDGE_KEY}&meta=true`,
+    {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        id: results.loginRecord.id,
+        fields: {
+          'Slack ID': results.authData.authed_user.id
+        }
+      })
+    }
+  )
 
   if (!results.prefillFields['Application Record ID']) {
     const errorData = {
