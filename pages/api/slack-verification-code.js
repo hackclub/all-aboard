@@ -10,6 +10,7 @@ const encodeFormData = data => {
 }
 
 export default async (req, res) => {
+  res.send('Hey sneaky! Applications have closed')
   const { code, state } = req.query
   const { SLACK_CLIENT_ID, SLACK_CLIENT_SECRET, AIRBRIDGE_KEY } = process.env
 
