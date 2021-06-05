@@ -40,14 +40,14 @@ const CTA = () => (
         }}
       >
         <Box>
-          <Heading sx={{ fontSize: 6 }}>Apply Now</Heading>
+          <Heading sx={{ fontSize: 6 }}>Applications have closed.</Heading>
           <Text as="p" sx={{ fontStyle: 'italic', mt: 2 }}>
-            Open until June 4th, 2021
+            Thank you to all who applyed.
           </Text>
         </Box>
       </Box>
       <Box>
-        <Button sx={buttonSX} as="a" href="/api/sign-in-slack" target="_blank">
+        <Button sx={buttonSX} target="_blank">
           <Heading sx={{ mb: [1, 2], textAlign: 'center' }}>
             Hacker Zephyr
           </Heading>
