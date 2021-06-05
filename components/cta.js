@@ -42,7 +42,7 @@ const CTA = () => (
         <Box>
           <Heading sx={{ fontSize: 6 }}>Applications have closed.</Heading>
           <Text as="p" sx={{ fontStyle: 'italic', mt: 2 }}>
-            Thank you to all who applyed.
+            Thank you to all who applied.
           </Text>
         </Box>
       </Box>
