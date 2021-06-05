@@ -40,7 +40,7 @@ const CTA = () => (
         }}
       >
         <Box>
-          <Heading sx={{ fontSize: 6 }}>The interest form has closed.</Heading>
+          <Heading sx={{ fontSize: 6 }}>The interest form has now closed.</Heading>
           <Text as="p" sx={{ fontStyle: 'italic', mt: 2 }}>
             Thank you to all who registered.
           </Text>
