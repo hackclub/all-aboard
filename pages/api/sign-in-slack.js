@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 
 export default async (req, res) => {
+  res.send('Hey sneaky! Applications have closed')
   const { SLACK_CLIENT_ID, AIRBRIDGE_KEY } = process.env
   const uuid = uuidv4().toString()
 
