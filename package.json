@@ -22,7 +22,7 @@
     "chrome-aws-lambda": "^10.0.0",
     "marked": "^2.0.7",
     "hls.js": "^1.0.6",
-    "next": "^10.2.3",
+    "next": "^11.0.0",
     "palx": "^1.0.3",
     "puppeteer-core": "^10.0.0",
     "react": "^17.0.2",
@@ -33,7 +33,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.9",
+    "@types/react": "^17.0.11",
     "typescript": "^4.3.2"
   }
 }
