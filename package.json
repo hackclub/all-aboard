@@ -17,7 +17,7 @@
     "@hackclub/theme": "^0.3.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
-    "@octokit/core": "^3.4.0",
+    "@octokit/core": "^3.5.1",
     "airtable-plus": "^1.0.4",
     "chrome-aws-lambda": "^10.0.0",
     "marked": "^2.0.7",
