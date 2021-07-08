@@ -15,14 +15,17 @@
   "dependencies": {
     "@hackclub/meta": "^1.1.0",
     "@hackclub/theme": "^0.3.1",
+    "@mattjennings/react-modal": "^1.0.2",
+    "@mattjennings/react-modal-stack": "^1.0.2",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
     "@octokit/core": "^3.5.1",
     "airtable-plus": "^1.0.4",
     "chrome-aws-lambda": "^10.0.0",
-    "next": "^11.0.1",
-    "marked": "^2.1.3",
+    "framer-motion": "3.10.6",
     "hls.js": "^1.0.7",
+    "marked": "^2.1.3",
+    "next": "^11.0.1",
     "palx": "^1.0.3",
     "puppeteer-core": "^10.0.0",
     "react": "^17.0.2",
@@ -33,7 +36,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "typescript": "^4.3.4",
-    "@types/react": "^17.0.11"
+    "@types/react": "^17.0.11",
+    "typescript": "^4.3.4"
   }
 }
