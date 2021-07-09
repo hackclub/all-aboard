@@ -13,7 +13,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@hackclub/meta": "^1.1.0",
+    "@hackclub/meta": "^1.1.32",
     "@hackclub/theme": "^0.3.1",
     "@mattjennings/react-modal": "^1.0.2",
     "@mattjennings/react-modal-stack": "^1.0.2",
