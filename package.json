@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@hackclub/meta": "^1.1.32",
-    "@hackclub/theme": "^0.3.2",
+    "@hackclub/theme": "^0.3.3",
     "@mattjennings/react-modal": "^1.0.2",
     "@mattjennings/react-modal-stack": "^1.0.2",
     "@mdx-js/loader": "^1.6.22",

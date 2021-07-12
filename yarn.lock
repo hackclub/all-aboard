@@ -466,10 +466,10 @@
   resolved "https://registry.yarnpkg.com/@hackclub/meta/-/meta-1.1.32.tgz#ce10461cb440d42649d106d779946341cef9c42d"
   integrity sha512-vevgJP1jsbSn1TCLPJWZsmVJ51DcyOsXtMlUXmIPPGaTNPm2WwEQLOWrVmb5lpZJsONLeSmcQCrx4rpmGeyYIw==
 
-"@hackclub/theme@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@hackclub/theme/-/theme-0.3.2.tgz#2e849037adc552ca1d90141b39880069b9e52bb6"
-  integrity sha512-F4MHh/ONqH66o1eRurXnqfngLj2YcQHh3rv2VbUJzmaT2WkYd58bz05tErfPblk2alyLFuKq23z01hT7TqhZhw==
+"@hackclub/theme@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@hackclub/theme/-/theme-0.3.3.tgz#af4249519489459c0e6f9f50a9caab419495b92e"
+  integrity sha512-+K7jVUArvpziophJCCGB6vlQ7uvsm6VQnUnhHSMnF22s681Wgv6M0w12lUJBOevTu3KtgJVCmYlY888uvdaLvQ==
 
 "@hapi/accept@5.0.2":
   version "5.0.2"
