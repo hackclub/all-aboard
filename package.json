@@ -37,6 +37,6 @@
   },
   "devDependencies": {
     "typescript": "^4.3.5",
-    "@types/react": "^17.0.13"
+    "@types/react": "^17.0.14"
   }
 }
