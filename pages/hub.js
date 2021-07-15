@@ -364,23 +364,12 @@ export default function Hub() {
         <Grid sx={{ minHeight: '100vh' }} columns={[1, '2fr 1fr']}>
           <Box
             mt={'-24px'}
-            pb={4}
+            pb={[7, 4]}
             sx={{
               display: currentPage == 'schedule' ? 'block' : ['none', 'block'],
-              position: 'relative'
+              position: 'relative',
             }}
           >
-            <Box
-              sx={{
-                position: 'absolute',
-                height: '100%',
-                borderLeft: '1px solid white',
-                width: '30px',
-                mt: '41px',
-                left: '6px',
-                zIndex: 1
-              }}
-            ></Box>
             {schedule.map(day => (
               <Box key={day.date} sx={{ zIndex: 999 }}>
                 <Heading mt={4} color="rgba(196,77,77,1)" sx={{ zIndex: 999 }}>
