@@ -15,7 +15,7 @@
   "dependencies": {
     "@hackclub/meta": "^1.1.32",
     "@hackclub/theme": "^0.3.2",
-    "@mattjennings/react-modal": "^1.0.2",
+    "@mattjennings/react-modal": "^1.0.3",
     "@mattjennings/react-modal-stack": "^1.0.2",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.4",
@@ -27,7 +27,7 @@
     "marked": "^2.1.3",
     "next": "^11.0.1",
     "palx": "^1.0.3",
-    "puppeteer-core": "^10.1.0",
+    "puppeteer-core": "^10.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-tilt": "^0.1.4",
@@ -37,6 +37,6 @@
   },
   "devDependencies": {
     "typescript": "^4.3.5",
-    "@types/react": "^17.0.13"
+    "@types/react": "^17.0.39"
   }
 }
